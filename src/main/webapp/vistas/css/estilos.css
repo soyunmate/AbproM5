@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #213555;
+}
+header {
+  height: 350px;
+  background-image: url("https://images.pexels.com/photos/7070/space-desk-workspace-coworking.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+header.contact-header {
+  background-image: url("https://images.pexels.com/photos/326576/pexels-photo-326576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+header.capacitacion-header {
+  background-image: url("https://images.pexels.com/photos/3771097/pexels-photo-3771097.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.titulo-principal {
+  color: white;
+  font-weight: bolder;
+}
+
+.titulo-principal.titulo-contacto {
+  position: relative;
+}
+
+.servicios {
+  background-color: #4f709c;
+  padding: 50px;
+  height: auto;
+}
+
+.servicio.card {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.about-us {
+  background-color: #d8c4b6;
+  padding: 5px;
+  height: auto;
+}
+
+.descripcion {
+  font-size: 1.2rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+footer {
+  color: white;
+  padding: 5px;
+  padding-top: 15px;
+  background-color: black;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+}
+
+.about-title {
+  font-weight: bolder;
+  height: 50px;
+}
+
+.capacitacion-title {
+  font-weight: bolder;
+  height: 50px;
+}
+
+.titulo-servicios {
+  color: white;
+  font-weight: bolder;
+}
+
+.btn {
+  background-color: #213555;
+}
+
+input {
+  min-width: 350px;
+  max-width: 500px;
+  margin: auto;
+}
+
+textarea {
+  min-width: 350px;
+  max-width: 500px;
+  margin: auto;
+}
