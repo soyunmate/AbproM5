@@ -19,34 +19,7 @@ pageEncoding="UTF-8"%>
     />
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-dark"
-      style="background-color: #213555"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="Inicio">Asesorias S.A</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="Inicio"
-              >Inicio</a
-            >
-            <a class="nav-link" href="Contacto">Contacto</a>
-            <a class="nav-link" href="CrearCapacitacion">Crear Capacitacion</a>
-          </div>
-        </div>
-      </div>
-    </nav>
+    <%@ include file="NavBar.jsp" %>
 
     <header class="container-fluid pt-5">
       <div
@@ -57,8 +30,9 @@ pageEncoding="UTF-8"%>
     </header>
 
     <div
-      class="container-fluid text-center pt-3 about-us row rows-cols-2 justify-content-center align-items-center"
+      class="container-fluid text-center pt-3 about-us"
     >
+    <div class="row rows-cols-2 justify-content-center align-items-center">
       <h1 class="display-3 about-title col-lg-6 col-sm-12">¿Quienes somos?</h1>
       <div
         class="descripcion container text-center col-sm-8 col-lg-6 col-xs-12 p-5"
@@ -72,11 +46,13 @@ pageEncoding="UTF-8"%>
           especialistas experimentados en la materia, si se requieren.
         </div>
       </div>
+      </div>
     </div>
 
     <div
-      class="servicios container-fluid justify-content-center px-5 pt-3 row rows-cols-3"
+      class="servicios container-fluid "
     >
+    <div class="justify-content-center px-5 pt-3 row rows-cols-3">
       <div class="container title-container text-center px-5 row col-12">
         <h1 class="display-3 text-center pb-4 titulo-servicios">
           Nuestros Servicios
@@ -138,15 +114,10 @@ pageEncoding="UTF-8"%>
           </div>
         </div>
       </div>
+      </div>
     </div>
     <!-- aqui puede ir parte de contacto-->
-    <footer class="container-fluid position-relative text-center my-auto">
-      <p>Abpro Modulo 5 - Grupo 3</p>
-      <p>
-        Integrantes: Gabriel Muñoz - Juan Romero - Fabian Ugalde - Marcelo
-        Aceituno
-      </p>
-    </footer>
+    <%@ include file="footer.jsp" %>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"

@@ -14,34 +14,7 @@ pageEncoding="UTF-8"%>
     />
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-dark"
-      style="background-color: #213555"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="Inicio">Asesorias S.A</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="Inicio"
-              >Inicio</a
-            >
-            <a class="nav-link" href="Contacto">Contacto</a>
-            <a class="nav-link" href="CrearCapacitacion">Crear Capacitacion</a>
-          </div>
-        </div>
-      </div>
-    </nav>
+    <%@ include file="NavBar.jsp" %>
 
     <header class="container-fluid pt-5 capacitacion-header">
       <div
@@ -54,8 +27,9 @@ pageEncoding="UTF-8"%>
     </header>
 
     <div
-      class="container-fluid text-center pt-3 about-us row rows-cols-2 justify-content-center"
+      class="container-fluid text-center pt-3 about-us "
     >
+    <div class="row rows-cols-2 justify-content-center">
       <h1
         class="display-3 capacitacion-title col-lg-6 col-sm-12 my-auto py-auto"
       >
@@ -133,16 +107,10 @@ pageEncoding="UTF-8"%>
           <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
       </div>
+      </div>
     </div>
 
-    <!-- aqui puede ir parte de contacto-->
-    <footer class="container-fluid position-relative text-center my-auto">
-      <p>Abpro Modulo 5 - Grupo 3</p>
-      <p>
-        Integrantes: Gabriel Muñoz - Juan Romero - Fabian Ugalde - Marcelo
-        Aceituno
-      </p>
-    </footer>
+   <%@ include file="footer.jsp" %>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
