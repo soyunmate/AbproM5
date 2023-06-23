@@ -12,15 +12,20 @@ pageEncoding="UTF-8"%>
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    
+     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
   </head>
   <body>
     <%@ include file="NavBar.jsp" %>
 
-    <header class="container-fluid pt-5 capacitacion-header">
+    <header class="container-fluid capacitacion-header d-flex align-items-center">
       <div
-        class="container-fluid title-container text-center d-flex justify-content-center pt-5"
+        class="container-fluid title-container text-center d-flex justify-content-center"
       >
-        <h1 class="display-1 titulo-principal titulo-capacitacion pt-5 px-5">
+        <h1 class="display-1 titulo-principal titulo-capacitacion">
           Portal de Capacitaciones
         </h1>
       </div>
@@ -108,6 +113,9 @@ pageEncoding="UTF-8"%>
         </form>
       </div>
       </div>
+      
+      <img alt="" src="vistas/img/separator.png" class="mt-5">
+      
     </div>
 
    <%@ include file="footer.jsp" %>

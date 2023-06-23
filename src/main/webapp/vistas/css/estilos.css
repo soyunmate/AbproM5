@@ -1,21 +1,36 @@
+@font-face {
+  font-family: 'raleway';
+  src: url('fonts/raleway/Raleway-VariableFont_wght.ttf');
+}
+
+
 body {
   margin: 0;
   padding: 0;
   background-color: #213555;
 }
+
+.navbar {
+	border-bottom: 1px solid white;
+}
 header {
-  height: 350px;
+  height: 650px;
+ /*
   background-image: url("https://images.pexels.com/photos/7070/space-desk-workspace-coworking.jpg");
   background-position: center;
   background-size: cover;
+  */
+  background-image: url("https://images.pexels.com/photos/1067465/pexels-photo-1067465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-position: 50px;
 }
 
 header.contact-header {
-  background-image: url("https://images.pexels.com/photos/326576/pexels-photo-326576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: url("https://images.pexels.com/photos/63507/pexels-photo-63507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
 
 header.capacitacion-header {
-  background-image: url("https://images.pexels.com/photos/3771097/pexels-photo-3771097.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: url("https://images.pexels.com/photos/443428/pexels-photo-443428.jpeg");
 }
 
 .titulo-principal {
@@ -28,9 +43,10 @@ header.capacitacion-header {
 }
 
 .servicios {
-  background-color: #4f709c;
-  padding: 50px;
+  /*background-color: #403D39;*/
+  background-color: #CCC5B9;
   height: auto;
+  min-height: 300px;
 }
 
 .servicio.card {
@@ -39,15 +55,29 @@ header.capacitacion-header {
 }
 
 .about-us {
-  background-color: #d8c4b6;
-  padding: 5px;
+  background-color: #CCC5B9;
   height: auto;
+  min-height: 200px;
 }
 
 .descripcion {
   font-size: 1.2rem;
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
+}
+
+.card-container {
+	height: 300px;
+	font-family: raleway;
+	
+}
+
+.presentation-card.card-1 {
+	border-right: 1px solid black;
+}
+
+.presentation-card.card-3 {
+	border-left: 1px solid black;
 }
 
 footer {
@@ -85,8 +115,15 @@ input {
   margin: auto;
 }
 
+
 textarea {
   min-width: 350px;
   max-width: 500px;
   margin: auto;
+}
+
+@media (max-width: 991px) {
+  .contactIcons {
+  	display: none;
+  }
 }

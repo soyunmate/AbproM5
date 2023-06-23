@@ -1,21 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-
 <nav
       class="navbar navbar-expand-lg navbar-dark"
-      style="background-color: #213555"
+      style="background-color: black"
     >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="Inicio">Asesorias S.A</a>
+      <div class="container-fluid justify-content-between mx-3">
+        <a class="navbar-brand" href="Inicio">
+        	<i class="bi bi-apple fs-2"></i>
+        </a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler position-absolute end-0"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
@@ -26,14 +20,18 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
+          <div class="navbar-nav container justify-content-center">
             <a class="nav-link active" aria-current="page" href="Inicio"
               >Inicio</a
             >
             <a class="nav-link" href="Contacto">Contacto</a>
-            <a class="nav-link" href="CrearCapacitacion">Crear Capacitacion</a>
+            <a class="nav-link" href="CrearCapacitacion">Portal Capacitaciones</a>
+            <a class="nav-link" href="CrearCapacitacion">Portal Usuarios</a>
           </div>
         </div>
+        <a class="navbar-brand" href="Inicio">
+        	<i class="bi bi-linkedin fs-3 contactIcons"></i>
+        </a>
       </div>
     </nav>
 

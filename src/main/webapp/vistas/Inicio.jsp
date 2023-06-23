@@ -17,21 +17,23 @@ pageEncoding="UTF-8"%>
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+  
   </head>
   <body>
     <%@ include file="NavBar.jsp" %>
 
-    <header class="container-fluid pt-5">
+    <header class="container-fluid d-flex align-items-center">
       <div
-        class="container-fluid title-container text-center d-flex justify-content-center pt-5"
+        class="container-fluid title-container text-center d-flex justify-content-center"
       >
-        <h1 class="display-1 titulo-principal pt-5 px-5">Bienvenidos</h1>
+        <h1 class="display-1 titulo-principal">Bienvenidos</h1>
       </div>
     </header>
 
     <div
-      class="container-fluid text-center pt-3 about-us"
+      class="container-fluid text-center pt-3 about-us  d-flex justify-content-center"
     >
+    <!--  
     <div class="row rows-cols-2 justify-content-center align-items-center">
       <h1 class="display-3 about-title col-lg-6 col-sm-12">¿Quienes somos?</h1>
       <div
@@ -47,76 +49,89 @@ pageEncoding="UTF-8"%>
         </div>
       </div>
       </div>
+      -->
+      
+      <div class="card-container container row rows-col-4 align-items-center ">
+      		<div class="container presentation-card card-1 col">
+      			<p class="display-5 text-center fs-4">¿Quíenes somos?</p>
+      			
+      			<p>
+      				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam blandit arcu ut ornare dignissim. In eget sem quis felis volutpat mollis nec in leo. In ut eros ligula. 
+      			</p>
+      			<div class="container icon-container  fs-1">
+      				<i class="bi bi-twitter"></i>
+      				<i class="bi bi-linkedin"></i>
+      			</div>
+      		
+      		</div>
+      		<div class="container presentation-card card-2 col">
+      			<p class="display-5 text-center fs-4">Nuestra Misión</p>
+      			<p>
+      				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam blandit arcu ut ornare dignissim. In eget sem quis felis volutpat mollis nec in leo. In ut eros ligula. 
+      			</p>
+      			<div class="container icon-container fs-1">
+      				<i class="bi bi-person-workspace"></i>
+      			</div>
+      		</div>
+      		<div class="container presentation-card card-3 col">
+      			<p class="display-5 text-center fs-4">Plan de Pagos</p>
+      			<p>
+      				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam blandit arcu ut ornare dignissim. In eget sem quis felis volutpat mollis nec in leo. In ut eros ligula. 
+      			</p>
+      			<div class="container icon-container fs-1">
+      				<i class="bi bi-paypal"></i>
+      				<i class="bi bi-credit-card-2-back"></i>
+      			</div>
+      		</div>
+      </div>
+      
     </div>
 
     <div
-      class="servicios container-fluid "
+      class="servicios container-fluid text-center pb-3"
     >
-    <div class="justify-content-center px-5 pt-3 row rows-cols-3">
-      <div class="container title-container text-center px-5 row col-12">
-        <h1 class="display-3 text-center pb-4 titulo-servicios">
-          Nuestros Servicios
-        </h1>
-      </div>
-
-      <div
-        class="container row col-xs-3 col-sm-6 col-lg-9 col-xl-12 justify-content-center"
-      >
-        <div
-          class="card text-center mb-3 bg-dark servicio-card text-light mx-3"
-          style="width: 18rem"
-        >
-          <div class="card-body">
-            <h5 class="card-title">Resolución</h5>
-            <p class="card-text">
-              Soluciones integrales Equipos multidisciplinarios
-            </p>
-            <a href="#" class="btn btn-primary">Más Informacion</a>
-          </div>
-        </div>
-        <div
-          class="card text-center mb-3 bg-dark servicio-card text-light mx-3"
-          style="width: 18rem"
-        >
-          <div class="card-body">
-            <h5 class="card-title">Gestión</h5>
-            <p class="card-text">
-              Gestión documental Productos de alta calidad, sencillos y
-              legalizados.
-            </p>
-            <a href="#" class="btn btn-primary">Más Informacion</a>
-          </div>
-        </div>
-
-        <div
-          class="card text-center mb-3 bg-dark servicio-card text-light mx-3"
-          style="width: 18rem"
-        >
-          <div class="card-body">
-            <h5 class="card-title">Ventas</h5>
-            <p class="card-text">
-              Venta de EPP Distribuidores oficiales de VICSA SAFETY.
-            </p>
-            <a href="#" class="btn btn-primary">Más Informacion</a>
-          </div>
-        </div>
-
-        <div
-          class="card text-center mb-3 bg-dark servicio-card text-light mx-3"
-          style="width: 18rem"
-        >
-          <div class="card-body">
-            <h5 class="card-title">Soporte</h5>
-            <p class="card-text">
-              Soporte legal Descargos legales, apelaciones y asesorías técnicas.
-            </p>
-            <a href="#" class="btn btn-primary">Más Informacion</a>
-          </div>
-        </div>
-      </div>
+      <h1 class="display-3"> Nuestros Servicios</h1>
+      
+      <div id="carouselExampleDark" class="carousel carousel-dark slide mt-5">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner text-light">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-50" alt="...">
+      <div class="carousel-caption d-none d-md-block text-light">
+        <h5>Gestión empresarial</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
     </div>
-    <!-- aqui puede ir parte de contacto-->
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="https://images.pexels.com/photos/454507/pexels-photo-454507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-50" alt="...">
+      <div class="carousel-caption d-none d-md-block text-light">
+        <h5>Organización</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-50" alt="...">
+      <div class="carousel-caption d-none d-md-block text-light">
+        <h5>Soporte Técnico</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+      <img alt="" src="vistas/img/separator.png" class="mt-5">
+    </div>
     <%@ include file="footer.jsp" %>
 
     <script
