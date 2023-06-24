@@ -6,7 +6,7 @@
     >
       <div class="container-fluid justify-content-between mx-3">
         <a class="navbar-brand" href="Inicio">
-        	<i class="bi bi-apple fs-2"></i>
+        	<i class="bi bi-box-fill fs-2"></i>
         </a>
         <button
           class="navbar-toggler position-absolute end-0"
@@ -25,13 +25,20 @@
               >Inicio</a
             >
             <a class="nav-link" href="Contacto">Contacto</a>
-            <a class="nav-link" href="CrearCapacitacion">Portal Capacitaciones</a>
-            <a class="nav-link" href="CrearCapacitacion">Portal Usuarios</a>
+            <a class="nav-link" href="CrearCapacitacion">Crear Capacitaciones</a>
+            <a class="nav-link" href="ListarCapacitacion">Listar Capacitaciones</a>
+            <a class="nav-link" href="Login">Login</a>
           </div>
         </div>
-        <a class="navbar-brand" href="Inicio">
-        	<i class="bi bi-linkedin fs-3 contactIcons"></i>
+        <div>
+        <a class="navbar-brand" href="Login">
+        	<i class="bi bi-person-circle fs-3 contactIcons"></i>
+        	</a>
+        <a class="navbar-brand" href="#">
+        	<i class="bi bi-box-arrow-right fs-3 contactIcons"></i>
         </a>
+        
+        </div>
       </div>
     </nav>
 

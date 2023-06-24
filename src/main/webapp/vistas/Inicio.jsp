@@ -26,30 +26,13 @@ pageEncoding="UTF-8"%>
       <div
         class="container-fluid title-container text-center d-flex justify-content-center"
       >
-        <h1 class="display-1 titulo-principal">Bienvenidos</h1>
+        <h1 class="display-1 titulo-principal" style="opacity: 75%">Bienvenidos</h1>
       </div>
     </header>
 
     <div
       class="container-fluid text-center pt-3 about-us  d-flex justify-content-center"
     >
-    <!--  
-    <div class="row rows-cols-2 justify-content-center align-items-center">
-      <h1 class="display-3 about-title col-lg-6 col-sm-12">¿Quienes somos?</h1>
-      <div
-        class="descripcion container text-center col-sm-8 col-lg-6 col-xs-12 p-5"
-      >
-        <div>
-          Somos una empresa especializada en la prevencion de riesgos.
-          Desarrollamos soluciones integrales Iniciamos con una visita por parte
-          de nuestros consultores o una reunión virtual, para realizar un
-          diagnóstico y detectar las necesidades de nuestros clientes, y los
-          acompañamos hasta la implementación de las soluciones integrales con
-          especialistas experimentados en la materia, si se requieren.
-        </div>
-      </div>
-      </div>
-      -->
       
       <div class="card-container container row rows-col-4 align-items-center ">
       		<div class="container presentation-card card-1 col">

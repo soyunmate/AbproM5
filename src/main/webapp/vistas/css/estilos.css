@@ -25,6 +25,19 @@ header {
   background-position: 50px;
 }
 
+.contact-container {
+	 background-color: #CCC5B9;
+	height: auto;
+	min-height: 600px;
+}
+
+.form-container {
+	 background-color: #CCC5B9;
+	height: auto;
+	min-height: 600px;
+	
+}
+
 header.contact-header {
   background-image: url("https://images.pexels.com/photos/63507/pexels-photo-63507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
@@ -60,17 +73,11 @@ header.capacitacion-header {
   min-height: 200px;
 }
 
-.descripcion {
-  font-size: 1.2rem;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: bold;
+.about-us.login-container {
+	
+	min-height: 550px;
 }
 
-.card-container {
-	height: 300px;
-	font-family: raleway;
-	
-}
 
 .presentation-card.card-1 {
 	border-right: 1px solid black;
@@ -86,7 +93,8 @@ footer {
   padding-top: 15px;
   background-color: black;
   margin: 0 auto;
-  position: absolute;
+  position: fixed;
+  left: 0;
   bottom: 0;
 }
 

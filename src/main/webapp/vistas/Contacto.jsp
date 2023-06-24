@@ -21,29 +21,28 @@ pageEncoding="UTF-8"%>
   <body>
     <%@ include file="NavBar.jsp" %>
 
-    <header class="container-fluid contact-header d-flex align-items-center">
-      <div
-        class="container-fluid title-container text-center d-flex justify-content-center"
-      >
-        <h1 class="display-1 titulo-principal titulo-contacto">
-          Contactanos
-        </h1>
-      </div>
-    </header>
+<!--     <header class="container-fluid contact-header d-flex align-items-center"> -->
+<!--       <div -->
+<!--         class="container-fluid title-container text-center d-flex justify-content-center" -->
+<!--       > -->
+<!--         <h1 class="display-1 titulo-principal titulo-contacto"> -->
+<!--           Contactanos -->
+<!--         </h1> -->
+<!--       </div> -->
+<!--     </header> -->
 
     <div
-      class="container-fluid text-center pt-3 about-us"
+      class="container-fluid text-center pt-3 contact-container"
     >
-    <div class="row rows-cols-2">
-      <h1 class="display-3 about-title col-lg-6 col-sm-12 my-auto py-auto">
-        Llena nuestro formulario!
+    <div class="container col-sm-8 col-lg-6 col-xs-12 d-flex flex-column justify-content-center align-items-center">
+      <h1 class="display-3 mb-3">
+        ¡Llena nuestro formulario!
       </h1>
 
-      <div class="container col-sm-8 col-lg-6 col-xs-12 py-3 my-3">
         <form
-          class="formulario row rows-col-2 justify-content-center"
+          class="formulario row col-6 justify-content-center"
         >
-          <div class="mb-3 row  d-flex justify-content-center">
+          <div class="mb-3 row justify-content-center ">
             <label for="nombre" class="form-label col">Nombre completo</label>
             <input
               type="text"
@@ -53,7 +52,7 @@ pageEncoding="UTF-8"%>
               required
             />
           </div>
-          <div class="mb-3 row">
+          <div class="mb-3 row justify-content-center ">
             <label for="email" class="form-label col">Correo Electronico</label>
             <input
               type="email"
@@ -63,7 +62,7 @@ pageEncoding="UTF-8"%>
               required
             />
           </div>
-          <div class="mb-3 row">
+          <div class="mb-3 row justify-content-center ">
             <label for="mensaje" class="form-label col">Mensaje</label>
             <textarea
               class="form-control col"
@@ -73,12 +72,11 @@ pageEncoding="UTF-8"%>
               required
             ></textarea>
           </div>
-          <button type="submit" class="btn btn-primary btn-sm col-2">Enviar</button>
+          <button type="submit" class="btn btn-dark btn-sm col-2">Enviar</button>
         </form>
-      </div>
+      
       </div>
       
-      <img alt="" src="vistas/img/separator.png" class="mt-5">
       
     </div>
 

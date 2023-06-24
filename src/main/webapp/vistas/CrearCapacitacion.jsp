@@ -21,100 +21,97 @@ pageEncoding="UTF-8"%>
   <body>
     <%@ include file="NavBar.jsp" %>
 
-    <header class="container-fluid capacitacion-header d-flex align-items-center">
-      <div
-        class="container-fluid title-container text-center d-flex justify-content-center"
-      >
-        <h1 class="display-1 titulo-principal titulo-capacitacion">
-          Portal de Capacitaciones
-        </h1>
-      </div>
-    </header>
+<!--     <header class="container-fluid capacitacion-header d-flex align-items-center"> -->
+<!--       <div -->
+<!--         class="container-fluid title-container text-center d-flex justify-content-center" -->
+<!--       > -->
+<!--         <h1 class="display-1 titulo-principal titulo-capacitacion"> -->
+<!--           Portal de Capacitaciones -->
+<!--         </h1> -->
+<!--       </div> -->
+<!--     </header> -->
 
     <div
-      class="container-fluid text-center pt-3 about-us "
+      class="container-fluid text-center pt-3 form-container "
     >
-    <div class="row rows-cols-2 justify-content-center">
-      <h1
-        class="display-3 capacitacion-title col-lg-6 col-sm-12 my-auto py-auto"
-      >
+      
+      <div class="container col-sm-8 col-lg-6 col-xs-12 d-flex flex-column justify-content-center align-items-center pb-3">
+      <h1 class="display-3 mb-3">
         Ingresar Capacitacion
       </h1>
 
-      <div class="container text-center col-sm-8 col-lg-6 col-xs-12 py-3 my-3">
         <form
-          class="d-flex flex-column justify-content-center align-items-center"
+          action="CrearCapacitacion" method="post"
+          class="formulario row col-6 justify-content-center"
         >
-          <div class="mb-3">
-            <label for="rutCliente" class="form-label">RUT Cliente</label>
+          <div class="mb-3 row justify-content-center ">
+            <label for="rutCliente" class="form-label col">RUT Cliente</label>
             <input
               type="text"
-              class="form-control"
-              id="rutCliente"
+              class="form-control col"
+              name="rutCliente"
               placeholder="Ingrese el RUT del cliente"
               required
             />
           </div>
-          <div class="mb-3">
-            <label for="dia" class="form-label">Día</label>
+          <div class="mb-3 row justify-content-center ">
+            <label for="dia" class="form-label col">Día</label>
             <input
               type="text"
-              class="form-control"
-              id="dia"
+              class="form-control col"
+              name="dia"
               placeholder="Ingrese el día"
               required
             />
           </div>
-          <div class="mb-3">
-            <label for="hora" class="form-label">Hora</label>
+          <div class="mb-3 row justify-content-center ">
+            <label for="hora" class="form-label col">Hora</label>
             <input
               type="text"
-              class="form-control"
-              id="hora"
+              class="form-control col"
+              name="hora"
               placeholder="Ingrese la hora"
               required
             />
           </div>
-          <div class="mb-3">
-            <label for="lugar" class="form-label">Lugar</label>
+          <div class="mb-3 row justify-content-center ">
+            <label for="lugar" class="form-label col">Lugar</label>
             <input
               type="text"
-              class="form-control"
-              id="lugar"
+              class="form-control col"
+              name="lugar"
               placeholder="Ingrese el lugar"
               required
             />
           </div>
-          <div class="mb-3">
-            <label for="duracion" class="form-label"
+          <div class="mb-3 row justify-content-center ">
+            <label for="duracion" class="form-label col"
               >Duración (en minutos)</label
             >
             <input
               type="number"
-              class="form-control"
-              id="duracion"
+              class="form-control col"
+              name="duracion"
               placeholder="Ingrese la duración"
               required
             />
           </div>
-          <div class="mb-3">
-            <label for="cantidadAsistentes" class="form-label"
+          <div class="mb-3 row justify-content-center ">
+            <label for="cantidadAsistentes" class="form-label col"
               >Cantidad de Asistentes</label
             >
             <input
               type="number"
-              class="form-control"
-              id="cantidadAsistentes"
+              class="form-control col"
+              name="cantidadAsistentes"
               placeholder="Ingrese la cantidad de asistentes"
               required
             />
           </div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="submit" class="btn btn-dark btn-sm col-2">Enviar</button>
         </form>
-      </div>
-      </div>
       
-      <img alt="" src="vistas/img/separator.png" class="mt-5">
+      </div>
       
     </div>
 
