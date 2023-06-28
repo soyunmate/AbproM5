@@ -136,6 +136,10 @@ textarea {
  	
 }
 
+.hidden {
+	display: none;
+}
+
 @media (max-width: 991px) {
   .contactIcons {
   	display: none;

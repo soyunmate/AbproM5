@@ -28,17 +28,22 @@
             <a class="nav-link" href="Contacto">Contacto</a>
             <a class="nav-link" href="CrearCapacitacion">Crear Capacitaciones</a>
             <a class="nav-link" href="ListarCapacitacion">Listar Capacitaciones</a>
+            <% if(request.getSession().getAttribute("user") == null) {%>
             <a class="nav-link" href="Login">Login</a>
+            <%} %>
           </div>
         </div>
         <div>
-        <a class="navbar-brand" href="Login">
+        <% if(request.getSession().getAttribute("user") == null) {%>	
+        <a class="navbar-brand " href="Login">
         	<i class="bi bi-person-circle fs-3 contactIcons"></i>
         	</a>
+        	<%} %>
+        <% if(request.getSession().getAttribute("user") != null) {%>
         <a class="navbar-brand" href="Logout">
         	<i class="bi bi-box-arrow-right fs-3 contactIcons"></i>
         </a>
-        
+        <%} %>
         </div>
       </div>
     </nav>
