@@ -37,7 +37,7 @@ public class Login extends HttpServlet {
 		// TODO Auto-generated method stub
 		String user = request.getParameter("nombre");
 		String password = request.getParameter("password");
-		/*
+		
 		if( user.contentEquals("admin") && password.contentEquals("1234") ) {
 			
 			HttpSession sesion = request.getSession();
@@ -45,8 +45,10 @@ public class Login extends HttpServlet {
 			sesion.setAttribute("user", user);
 			
 			getServletContext().getRequestDispatcher("/vistas/Inicio.jsp").forward(request, response);
+		} else {
+			getServletContext().getRequestDispatcher("/vistas/Login.jsp").forward(request, response);
 		}
-		*/
+	
 	}
 
 }

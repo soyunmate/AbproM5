@@ -6,6 +6,7 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import m5abpro1.Model.Capacitacion;
 import m5abpro1.Model.CapacitacionProcesos;
 
@@ -28,7 +29,12 @@ public class CrearCapacitacion extends HttpServlet {
 	 */
  
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		HttpSession sesion = request.getSession();
+		if (sesion.getAttribute("user") != null) {
 		getServletContext().getRequestDispatcher("/vistas/CrearCapacitacion.jsp").forward(request, response);
+	  } else {
+		  getServletContext().getRequestDispatcher("/vistas/Login.jsp").forward(request, response);
+	  }
 	}
 
 	/**

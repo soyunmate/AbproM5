@@ -5,6 +5,8 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
 import java.io.IOException;
 
 /**
@@ -25,7 +27,12 @@ public class Contacto extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		HttpSession sesion = request.getSession();
+		if (sesion.getAttribute("user") != null) {
 		getServletContext().getRequestDispatcher("/vistas/Contacto.jsp").forward(request, response);
+	  } else {
+		  getServletContext().getRequestDispatcher("/vistas/Login.jsp").forward(request, response);
+	  }
 	}
 
 	/**
