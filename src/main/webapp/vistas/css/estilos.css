@@ -130,6 +130,12 @@ textarea {
   margin: auto;
 }
 
+.separator {
+ 	height: 10vh;
+ 	width: 50vw;
+ 	
+}
+
 @media (max-width: 991px) {
   .contactIcons {
   	display: none;

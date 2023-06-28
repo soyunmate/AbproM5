@@ -28,6 +28,7 @@
 
       <div class="container col-sm-8 col-lg-6 col-xs-12 d-flex justify-content-center">
         <form
+          action="Login" method="post"
           class="formulario row col-6 justify-content-center"
         >
           <div class="mb-3 row justify-content-center ">
@@ -35,7 +36,7 @@
             <input
               type="text"
               class="form-control"
-              id="nombre"
+              name="nombre"
               placeholder="Ingrese su nombre"
               required
             />
@@ -45,7 +46,7 @@
             <input
               type="password"
               class="form-control"
-              id="passwrod"
+              name="password"
               placeholder="Ingrese su contraseña"
               required
             />

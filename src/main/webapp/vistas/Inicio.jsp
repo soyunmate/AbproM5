@@ -71,7 +71,7 @@ pageEncoding="UTF-8"%>
     </div>
 
     <div
-      class="servicios container-fluid text-center pb-3"
+      class="servicios container-fluid text-center"
     >
       <h1 class="display-3"> Nuestros Servicios</h1>
       
@@ -113,7 +113,7 @@ pageEncoding="UTF-8"%>
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-      <img alt="" src="vistas/img/separator.png" class="mt-5">
+      <img alt="" src="vistas/img/separator-2.png" class="w-25">
     </div>
     <%@ include file="footer.jsp" %>
 

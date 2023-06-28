@@ -4,12 +4,12 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import Model.Capacitacion;
-import Model.CapacitacionProcesos;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import m5abpro1.Model.Capacitacion;
+import m5abpro1.Model.CapacitacionProcesos;
 
 /**
  * Servlet implementation class ListarCapacitacion

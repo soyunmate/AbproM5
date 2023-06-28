@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="Model.Capacitacion" %>
-<%@ page import="Model.CapacitacionProcesos" %>
+<%@ page import="m5abpro1.Model.Capacitacion" %>
+<%@ page import="m5abpro1.Model.CapacitacionProcesos" %>
 <%@ page import="java.util.*" %>
 <!DOCTYPE html>
 <html>
@@ -44,16 +44,16 @@
   		<%
      	 ArrayList<Capacitacion> listado = (ArrayList<Capacitacion>)request.getAttribute("listado");
   		
-		for (Capacitacion c : listado) {
+		for (Capacitacion cap : listado) {
 			
 		%>	
 			<tr>
-				<td> <%= c.getRutCliente() %> </td>
-				<td><%= c.getLugar() %></td>
-				<td><%= c.getDia() %></td>
-				<td><%= c.getHora() %></td>
-				<td><%= c.getDuracion() %></td>
-				<td><%= c.getCantAsist() %></td>
+				<td> <%= cap.getRutCliente() %> </td>
+				<td><%= cap.getLugar() %></td>
+				<td><%= cap.getDia() %></td>
+				<td><%= cap.getHora() %></td>
+				<td><%= cap.getDuracion() %></td>
+				<td><%= cap.getCantAsist() %></td>
 			
 			</tr>
 			

@@ -1,11 +1,12 @@
 package m5abpro1.Servlet;
 
+import java.io.IOException;
+
 import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import java.io.IOException;
+import jakarta.servlet.http.HttpSession;
 
 /**
  * Servlet implementation class Login
@@ -34,7 +35,18 @@ public class Login extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+		String user = request.getParameter("nombre");
+		String password = request.getParameter("password");
+		/*
+		if( user.contentEquals("admin") && password.contentEquals("1234") ) {
+			
+			HttpSession sesion = request.getSession();
+			
+			sesion.setAttribute("user", user);
+			
+			getServletContext().getRequestDispatcher("/vistas/Inicio.jsp").forward(request, response);
+		}
+		*/
 	}
 
 }

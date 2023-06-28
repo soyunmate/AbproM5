@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <nav
       class="navbar navbar-expand-lg navbar-dark"
       style="background-color: black"
@@ -34,7 +35,7 @@
         <a class="navbar-brand" href="Login">
         	<i class="bi bi-person-circle fs-3 contactIcons"></i>
         	</a>
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="Logout">
         	<i class="bi bi-box-arrow-right fs-3 contactIcons"></i>
         </a>
         
