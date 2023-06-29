@@ -21,8 +21,10 @@
 </head>
 <body>
 <%@ include file="NavBar.jsp" %>
-<div
-      class="container-fluid text-center about-us login-container pt-5"
+
+	<div
+      class="container-fluid text-center about-us pt-5"
+      id="principal"
     >
 
 

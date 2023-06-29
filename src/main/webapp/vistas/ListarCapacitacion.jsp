@@ -32,28 +32,23 @@
   <thead>
     <tr>
       
-      <th scope="col">Rut Cliente</th>
-      <th scope="col">Lugar</th>
-      <th scope="col">Dia</th>
-      <th scope="col">Hora</th>
-      <th scope="col">Duracion</th>
-      <th scope="col">Asistentes</th>
+      <th scope="col">Id</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Detalle</th>
+   
     </tr>
   </thead>
   <tbody class="table-group-divider table-secondary">
   		<%
-     	 ArrayList<Capacitacion> listado = (ArrayList<Capacitacion>)request.getAttribute("listado");
-  		
-		for (Capacitacion cap : listado) {
-			
-		%>	
+  		ArrayList<Capacitacion> listado = (ArrayList<Capacitacion>)request.getAttribute("listado");
+  		  		
+  				for (Capacitacion cap : listado) {
+  		%>	
 			<tr>
-				<td> <%= cap.getRutCliente() %> </td>
-				<td><%= cap.getLugar() %></td>
-				<td><%= cap.getDia() %></td>
-				<td><%= cap.getHora() %></td>
-				<td><%= cap.getDuracion() %></td>
-				<td><%= cap.getCantAsist() %></td>
+			
+				<td><%= cap.getId() %></td>
+				<td><%= cap.getNombre() %></td>
+				<td><%= cap.getDetalle() %></td>	
 			
 			</tr>
 			

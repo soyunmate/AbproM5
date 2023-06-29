@@ -4,10 +4,11 @@
 }
 
 
-body {
+body.principal {
   margin: 0;
   padding: 0;
-  background-color: #213555;
+  background-color: black;
+  
 }
 
 .navbar {
@@ -67,16 +68,13 @@ header.capacitacion-header {
   font-family: "Times New Roman", Times, serif;
 }
 
-.about-us {
-  background-color: #CCC5B9;
+#principal {
+/*   background-color: #CCC5B9; */
+  background-color: black;
   height: auto;
   min-height: 200px;
 }
 
-.about-us.login-container {
-	
-	min-height: 550px;
-}
 
 
 .presentation-card.card-1 {

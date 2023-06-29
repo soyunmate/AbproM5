@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import m5abpro1.Model.Capacitacion;
-import m5abpro1.Model.CapacitacionProcesos;
+
 
 /**
  * Servlet implementation class CrearCapacitacion
@@ -42,14 +42,15 @@ public class CrearCapacitacion extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Capacitacion cap = new Capacitacion();
+		/*
 		cap.setRutCliente(request.getParameter("rutCliente"));
 		cap.setDia(request.getParameter("dia"));
 		cap.setHora(request.getParameter("hora"));
 		cap.setLugar(request.getParameter( "lugar"));
 		cap.setDuracion(request.getParameter("duracion"));
 		cap.setCantAsist(request.getParameter("cantidadAsistentes"));
-		
-		m5abpro1.Model.CapacitacionProcesos.addCapacitacion(cap);
+		*/
+		//m5abpro1.Model.CapacitacionProcesos.addCapacitacion(cap);
 		
 			
 		doGet(request, response);

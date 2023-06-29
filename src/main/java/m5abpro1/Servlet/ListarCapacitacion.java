@@ -10,7 +10,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import m5abpro1.Model.Capacitacion;
-import m5abpro1.Model.CapacitacionProcesos;
+import m5abpro1.Model.DAO.CapacitacionDAOImpl;
 
 /**
  * Servlet implementation class ListarCapacitacion
@@ -29,7 +29,9 @@ public class ListarCapacitacion extends HttpServlet {
 		HttpSession sesion = request.getSession();
 		
 		if (sesion.getAttribute("user") != null) {
-		List<Capacitacion> listado = CapacitacionProcesos.getListado();
+		CapacitacionDAOImpl cDAO = new CapacitacionDAOImpl();
+		//List<CapacitacionOld> listado = CapacitacionProcesos.getListado();
+		List<Capacitacion> listado = cDAO.readAll();
 		request.setAttribute("listado", listado);
 		getServletContext().getRequestDispatcher("/vistas/ListarCapacitacion.jsp").forward(request, response);
 		} else {
