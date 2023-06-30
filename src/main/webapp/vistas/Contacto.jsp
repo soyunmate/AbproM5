@@ -21,26 +21,16 @@ pageEncoding="UTF-8"%>
   <body>
     <%@ include file="NavBar.jsp" %>
 
-<!--     <header class="container-fluid contact-header d-flex align-items-center"> -->
-<!--       <div -->
-<!--         class="container-fluid title-container text-center d-flex justify-content-center" -->
-<!--       > -->
-<!--         <h1 class="display-1 titulo-principal titulo-contacto"> -->
-<!--           Contactanos -->
-<!--         </h1> -->
-<!--       </div> -->
-<!--     </header> -->
-
     <div
-      class="container-fluid text-center pt-3 contact-container"
+      class="container-fluid contacto"
     >
-    <div class="container col-sm-8 col-lg-6 col-xs-12 d-flex flex-column justify-content-center align-items-center">
-      <h1 class="display-3 mb-3">
+    <div class="container form-container col-sm-8 col-lg-12 col-xs-12 d-flex justify-content-around align-items-center">
+      <h1 class="display-3 titulo-contacto col-4 text-center">
         ¡Llena nuestro formulario!
       </h1>
 
         <form
-          class="formulario row col-6 justify-content-center"
+          class="formulario row col-4 justify-content-center fw-bold"
         >
           <div class="mb-3 row justify-content-center ">
             <label for="nombre" class="form-label col">Nombre completo</label>
@@ -72,7 +62,7 @@ pageEncoding="UTF-8"%>
               required
             ></textarea>
           </div>
-          <button type="submit" class="btn btn-dark btn-sm col-2">Enviar</button>
+          <button type="submit" class="btn btn-dark col-4 align-self-center border border-light">Enviar</button>
         </form>
       
       </div>

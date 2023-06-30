@@ -31,7 +31,8 @@ pageEncoding="UTF-8"%>
     </header>
 
     <div
-      class="container-fluid text-center pt-3 about-us  d-flex justify-content-center"
+      class="container-fluid text-center pt-3 d-flex justify-content-center"
+      id="principal-container"
     >
       
       <div class="card-container container row rows-col-4 align-items-center ">

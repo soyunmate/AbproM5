@@ -21,94 +21,42 @@ pageEncoding="UTF-8"%>
   <body>
     <%@ include file="NavBar.jsp" %>
 
-<!--     <header class="container-fluid capacitacion-header d-flex align-items-center"> -->
-<!--       <div -->
-<!--         class="container-fluid title-container text-center d-flex justify-content-center" -->
-<!--       > -->
-<!--         <h1 class="display-1 titulo-principal titulo-capacitacion"> -->
-<!--           Portal de Capacitaciones -->
-<!--         </h1> -->
-<!--       </div> -->
-<!--     </header> -->
-
     <div
-      class="container-fluid text-center pt-3 form-container "
+      class="container-fluid pt-3 crear-capacitacion"
     >
       
-      <div class="container col-sm-8 col-lg-6 col-xs-12 d-flex flex-column justify-content-center align-items-center pb-3">
-      <h1 class="display-3 mb-3">
+      <div class="container form-container col-sm-8 col-lg-12 col-xs-12 d-flex justify-content-around align-items-center pb-5">
+      <h1 class="display-3 mb-3 col-4 text-center titulo-crear-capacitacion">
         Ingresar Capacitacion
       </h1>
 
         <form
           action="CrearCapacitacion" method="post"
-          class="formulario row col-6 justify-content-center"
+          class="formulario row col-4 justify-content-center fw-bold"
         >
-          <div class="mb-3 row justify-content-center ">
-            <label for="rutCliente" class="form-label col">RUT Cliente</label>
+        
+          <div class="mb-3">
+            <label for="nombre" class="form-label col">Nombre</label>
             <input
               type="text"
               class="form-control col"
-              name="rutCliente"
-              placeholder="Ingrese el RUT del cliente"
+              name="nombre"
+              placeholder="Ingrese nombre/titulo"
               required
             />
           </div>
-          <div class="mb-3 row justify-content-center ">
-            <label for="dia" class="form-label col">Día</label>
-            <input
-              type="text"
+          <div class="mb-3 ">
+            <label for="detalle" class="form-label col">Detalle</label>
+            <textarea
               class="form-control col"
-              name="dia"
-              placeholder="Ingrese el día"
+              name="detalle"
+              rows="5"
+              placeholder="Ingrese detalles"
               required
-            />
+            ></textarea>
           </div>
-          <div class="mb-3 row justify-content-center ">
-            <label for="hora" class="form-label col">Hora</label>
-            <input
-              type="text"
-              class="form-control col"
-              name="hora"
-              placeholder="Ingrese la hora"
-              required
-            />
-          </div>
-          <div class="mb-3 row justify-content-center ">
-            <label for="lugar" class="form-label col">Lugar</label>
-            <input
-              type="text"
-              class="form-control col"
-              name="lugar"
-              placeholder="Ingrese el lugar"
-              required
-            />
-          </div>
-          <div class="mb-3 row justify-content-center ">
-            <label for="duracion" class="form-label col"
-              >Duración (en minutos)</label
-            >
-            <input
-              type="number"
-              class="form-control col"
-              name="duracion"
-              placeholder="Ingrese la duración"
-              required
-            />
-          </div>
-          <div class="mb-3 row justify-content-center ">
-            <label for="cantidadAsistentes" class="form-label col"
-              >Cantidad de Asistentes</label
-            >
-            <input
-              type="number"
-              class="form-control col"
-              name="cantidadAsistentes"
-              placeholder="Ingrese la cantidad de asistentes"
-              required
-            />
-          </div>
-          <button type="submit" class="btn btn-dark btn-sm col-2">Enviar</button>
+          
+          <button type="submit" class="btn btn-dark col-4 align-self-center border border-light">Enviar</button>
         </form>
       
       </div>

@@ -23,17 +23,15 @@
 <%@ include file="NavBar.jsp" %>
 
 	<div
-      class="container-fluid text-center about-us pt-5"
-      id="principal"
+      class="container-fluid pt-5 login-container"
+      id="principal-container"
     >
-
-
-      <div class="container col-sm-8 col-lg-6 col-xs-12 d-flex justify-content-center">
+      <div class="container  form-login-container col-sm-8 col-lg-6 col-xs-12 d-flex justify-content-center align-items-start">
         <form
           action="Login" method="post"
-          class="formulario row col-6 justify-content-center"
+          class="formulario form-login col-7 border border-light p-3 bg-dark rounded"
         >
-          <div class="mb-3 row justify-content-center ">
+          <div class="mb-3">
             <label for="nombre" class="form-label fw-bold">Usuario</label>
             <input
               type="text"
@@ -43,7 +41,7 @@
               required
             />
           </div>
-          <div class="mb-3 row justify-content-center">
+          <div class="mb-3">
             <label for="email" class="form-label fw-bold">Contraseña</label>
             <input
               type="password"
@@ -53,7 +51,9 @@
               required
             />
           </div>
-          <button type="submit" class="btn btn-dark btn-sm col-2">Login</button>
+          <div class="text-center">
+          <button type="submit" class="btn btn-dark col-4 align-self-center border border-light">Login</button>
+        	</div>
         </form>
       </div>
    

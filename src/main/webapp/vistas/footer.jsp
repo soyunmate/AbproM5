@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <body>
 
-<footer class="container-fluid position-relative text-center my-auto">
+<footer class="container-fluid position-relative text-center my-auto border-top border-light">
       <p>Abpro Modulo 5 - Grupo 3</p>
       <p>
         Integrantes: Gabriel Muñoz - Juan Romero - Fabian Ugalde - Marcelo
