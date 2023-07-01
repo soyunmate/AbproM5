@@ -8,6 +8,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import m5abpro1.Model.Capacitacion;
+import m5abpro1.Model.CapacitacionDAOImpl;
 
 
 /**
@@ -41,19 +42,15 @@ public class CrearCapacitacion extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Capacitacion cap = new Capacitacion();
-		/*
-		cap.setRutCliente(request.getParameter("rutCliente"));
-		cap.setDia(request.getParameter("dia"));
-		cap.setHora(request.getParameter("hora"));
-		cap.setLugar(request.getParameter( "lugar"));
-		cap.setDuracion(request.getParameter("duracion"));
-		cap.setCantAsist(request.getParameter("cantidadAsistentes"));
-		*/
-		//m5abpro1.Model.CapacitacionProcesos.addCapacitacion(cap);
 		
+		CapacitacionDAOImpl cDAO = new CapacitacionDAOImpl();
+		Capacitacion cap = new Capacitacion();
+		
+		cap.setNombre(request.getParameter("nombre"));
+		cap.setDetalle(request.getParameter("detalle"));
+		cDAO.create(cap);
 			
-		doGet(request, response);
+		getServletContext().getRequestDispatcher("/ListarCapacitacion").forward(request, response);
 	}
 
 }

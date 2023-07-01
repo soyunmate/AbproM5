@@ -31,7 +31,7 @@
 /* Header*/
 header {
   height: 650px;
-
+	/*background-image: url("../img/inicioImg.jpeg");*/
   background-image: url("https://images.pexels.com/photos/1067465/pexels-photo-1067465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-size: cover;
   background-position: 50px;
@@ -48,7 +48,8 @@ header {
 /* container principal */
 
 #principal-container {
-   background-color: #CCC5B9;
+   background-color: rgba(204,197,185, .45);
+ 
   height: auto;
   min-height: 200px;
 }
@@ -98,11 +99,34 @@ header {
 	background-position: center;
 }
 
+/* Crear Usuario*/
+
+.crear-usuario {
+	background-image: url("https://images.pexels.com/photos/543351/pexels-photo-543351.jpeg");
+	background-size: cover;
+	background-position: center;
+	color: white
+}
+
+.titulo-crear-usuario {
+	color: white;
+	opacity: 75%
+}
+
+/* Listar usuarios*/
+
+.lista-usuarios {
+	background-image: url("https://images.pexels.com/photos/1439164/pexels-photo-1439164.jpeg");
+	background-size: cover;
+	background-position: center;
+}
+
 
 /* Inicio jsp*/
 .servicios {
   /*background-color: #403D39;*/
-  background-color: #CCC5B9;
+  /*background-color: #CCC5B9;*/
+  color: white;
   height: auto;
   min-height: 300px;
 }
@@ -119,6 +143,18 @@ header {
 .presentation-card.card-3 {
 	border-left: 1px solid black;
 }
+
+/* carousel */
+
+carousel .carousel-item {
+  height: 400px;
+}
+
+.carousel-item img {
+  	max-height: 500px;
+    min-height: 300px;
+    max-width: 600px
+} 
 
 
 /* Login jsp */

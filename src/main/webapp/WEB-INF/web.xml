@@ -79,4 +79,44 @@
     <servlet-name>Test</servlet-name>
     <url-pattern>/Test</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EliminarCapacitacion</display-name>
+    <servlet-name>EliminarCapacitacion</servlet-name>
+    <servlet-class>m5abpro1.Servlet.EliminarCapacitacion</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EliminarCapacitacion</servlet-name>
+    <url-pattern>/EliminarCapacitacion</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EditarCapacitacion</display-name>
+    <servlet-name>EditarCapacitacion</servlet-name>
+    <servlet-class>m5abpro1.Servlet.EditarCapacitacion</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditarCapacitacion</servlet-name>
+    <url-pattern>/EditarCapacitacion</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CrearUsuario</display-name>
+    <servlet-name>CrearUsuario</servlet-name>
+    <servlet-class>m5abpro1.Servlet.CrearUsuario</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CrearUsuario</servlet-name>
+    <url-pattern>/CrearUsuario</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ListarUsuario</display-name>
+    <servlet-name>ListarUsuario</servlet-name>
+    <servlet-class>m5abpro1.Servlet.ListarUsuario</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListarUsuario</servlet-name>
+    <url-pattern>/ListarUsuario</url-pattern>
+  </servlet-mapping>
 </web-app>

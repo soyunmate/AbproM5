@@ -10,7 +10,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import m5abpro1.Model.Capacitacion;
-import m5abpro1.Model.DAO.CapacitacionDAOImpl;
+import m5abpro1.Model.CapacitacionDAOImpl;
 
 /**
  * Servlet implementation class ListarCapacitacion

@@ -37,7 +37,7 @@
               type="text"
               class="form-control"
               name="nombre"
-              placeholder="Ingrese su nombre"
+              placeholder="Nombre de usuario"
               required
             />
           </div>

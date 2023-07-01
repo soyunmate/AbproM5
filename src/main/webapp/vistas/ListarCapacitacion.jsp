@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="m5abpro1.Model.Capacitacion" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <%@ page import="java.util.*" %>
 <!DOCTYPE html>
 <html>
@@ -50,10 +51,10 @@
             		<td>${cap.nombre}</td>
            		 	<td>${cap.detalle}</td>
            		 	<td> 
-           		 		<a href="#" class="navbar-brand ">
+           		 		<a href="EditarCapacitacion" class="navbar-brand ">
            		 		 <i class="bi bi-pencil-square fs-3"></i>
            		 		 </a> 
-           		 		 <a href="#" class="navbar-brand ">
+           		 		 <a href="EliminarCapacitacion?${cap.id}" class="navbar-brand ">
            		 		 <i class="bi bi-trash fs-3"></i>
            		 		 </a> 
            		 	</td>

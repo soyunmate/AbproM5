@@ -25,15 +25,15 @@
             <a class="nav-link active" aria-current="page" href="Inicio"
               >Inicio</a
             >
+            
+            <a class="nav-link" href="#menu-desplegable" data-bs-toggle="offcanvas" aria-controls="menu-desplegable">Menu Principal</a>
             <a class="nav-link" href="Contacto" >Contacto</a>
-            <a class="nav-link" href="#menu-desplegable" data-bs-toggle="offcanvas" aria-controls="menu-desplegable">Menu Capacitaciones</a>
             
             
             
             
-            
-            <a class="nav-link" href="CrearCapacitacion">Crear Capacitaciones</a>
-            <a class="nav-link" href="ListarCapacitacion">Listar Capacitaciones</a>
+<!--             <a class="nav-link" href="CrearCapacitacion">Crear Capacitaciones</a> -->
+<!--             <a class="nav-link" href="ListarCapacitacion">Listar Capacitaciones</a> -->
             
             <c:if test="${sessionScope.user == null}">
 			<%--             <% if(request.getSession().getAttribute("user") == null) {%> --%>
@@ -43,11 +43,46 @@
           </div>
         </div>
         <div>
-        <c:if test="${sessionScope.user == null}">
-        <a class="navbar-brand " href="Login">
+        
+        
+        <div class="dropstart">
+  
+  	<c:if test="${sessionScope.user == null}">
+        <a class="navbar-brand dropdown-toggle" href="#"
+        	data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"
+        	data-bs-offset="100,100"
+        	
+        >
         	<i class="bi bi-person-circle fs-3 contactIcons"></i>
         	</a>
         </c:if>
+  <form action="Login" method="post" class="dropdown-menu p-4 dropdown-menu-end dropdown-menu-lg-start" data-bs-theme="dark">
+    <div class="mb-3">
+            <label for="nombre" class="form-label fw-bold">Usuario</label>
+            <input
+              type="text"
+              class="form-control"
+              name="nombre"
+              placeholder="Nombre de usuario"
+              required
+            />
+          </div>
+    <div class="mb-3">
+            <label for="email" class="form-label fw-bold">Contraseña</label>
+            <input
+              type="password"
+              class="form-control"
+              name="password"
+              placeholder="Ingrese su contraseña"
+              required
+            />
+          </div>
+     <div class="text-center">
+    	<button type="submit" class="btn btn-dark border border-light col-4">Entrar</button>
+    </div>
+  </form>
+</div>
+        
         
         <c:if test="${sessionScope.user != null}">
         <a class="navbar-brand" href="Logout">
@@ -59,42 +94,107 @@
       </div>
     </nav>
     
+    
+    
+  
+    
+    
+    
+    
     <div class="offcanvas offcanvas-start text-bg-dark bg-image" tabindex="-1" id="menu-desplegable" aria-labelledby="menu-desplegable-Label"
     	style="
     	background-image: url('https://images.pexels.com/photos/716398/pexels-photo-716398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     	height: 100vh;
   		"
     >
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="menu-desplegable-Label">Acciones: </h5>
+  <div class="offcanvas-header text-center">
+    <h5 class="offcanvas-title" id="menu-desplegable-Label">Menu Principal </h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-  <div class="offcanvas-body ">
-<!--   
-    <div class="container-fluid boton-menu mx-0 px-0 text-center my-2"
-    	style="background-image: linear-gradient(to right bottom, #5b5896, #274c79, #003b55, #042832, #071516)"
-    >
-    <a href="CrearCapacitacion" class="nav-link">
-      Crear Capacitaciones
-      </a>
-    </div>
-    
-    <div class="container-fluid boton-menu mx-0 px-0 text-center my-2"
-    	style="background-image: linear-gradient(to right bottom, #5b5896, #274c79, #003b55, #042832, #071516)"
-    >
-      <a href="ListarCapacitacion" class="nav-link">
-      Crear Capacitaciones
-      </a>
-    </div>
-    
-    <div class="container-fluid boton-menu mx-0 px-0 text-center my-2"
-    	style="background-image: linear-gradient(to right bottom, #5b5896, #274c79, #003b55, #042832, #071516)"
-    >
-      <a href="#" class="nav-link">
-      Eliminar Capacitacion
-      </a>
-    </div>
-    -->
+  <div class="offcanvas-body text-center">
+  
+		<div class="dropdown">
+	  <button class="btn btn-dark border border-light dropdown-toggle col-8" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+	    Administrar Usuarios
+	  </button>
+	  <ul class="dropdown-menu dropdown-menu-dark">
+	    <li><a class="dropdown-item" href="CrearUsuario">Registrar Usuarios</a></li>
+	    <li><a class="dropdown-item" href="ListarUsuario">Lista Usuarios</a></li>
+	    
+	  </ul>
+	</div>
+
+	<div class="dropdown pt-4">
+	  <button class="btn btn-dark border border-light  dropdown-toggle col-8" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+	    Administrar Capacitaciones
+	  </button>
+	  <ul class="dropdown-menu dropdown-menu-dark">
+	    <li><a class="dropdown-item" href="CrearCapacitacion">Crear Capacitacion</a></li>
+	    <li><a class="dropdown-item" href="ListarCapacitacion">Listar Capacitacion</a></li>
+	    
+	  </ul>
+	</div>
+
+	<div class="dropdown pt-4">
+	  <button class="btn btn-dark border border-light dropdown-toggle col-8" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+	    Administrar Asesorias
+	  </button>
+	  <ul class="dropdown-menu dropdown-menu-dark">
+	    <li><a class="dropdown-item" href="#">Crear Asesoria</a></li>
+	    <li><a class="dropdown-item" href="#">Lista Asesorias</a></li>
+	  </ul>
+	</div>
+	
+	<div class="dropdown pt-4">
+	  <button class="btn btn-dark border border-light dropdown-toggle col-8" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+	    Administrar Asistentes
+	  </button>
+	  <ul class="dropdown-menu dropdown-menu-dark">
+	    <li><a class="dropdown-item" href="#">Ingresar Asistentes</a></li>
+	    <li><a class="dropdown-item" href="#">Listar Asistentes</a></li>
+	  </ul>
+	</div>
+	
+		<div class="dropdown pt-4">
+	  <button class="btn btn-dark border border-light dropdown-toggle col-8" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+	    Administrar Pagos
+	  </button>
+	  <ul class="dropdown-menu dropdown-menu-dark">
+	    <li><a class="dropdown-item" href="#">Ingresar Pago</a></li>
+	    <li><a class="dropdown-item" href="#">Listar Pagos</a></li>
+	  </ul>
+	</div>
+	
+	<div class="dropdown pt-4">
+	  <button class="btn btn-dark border border-light dropdown-toggle col-8" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+	    Administrar Visitas
+	  </button>
+	  <ul class="dropdown-menu dropdown-menu-dark">
+	    <li><a class="dropdown-item" href="#">Ingresar Visita</a></li>
+	    <li><a class="dropdown-item" href="#">Listar Visitas</a></li>
+	  </ul>
+	</div>
+	
+	<div class="dropdown pt-4">
+	  <button class="btn btn-dark border border-light dropdown-toggle col-8" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+	    Administrar Chequeos
+	  </button>
+	  <ul class="dropdown-menu dropdown-menu-dark">
+	    <li><a class="dropdown-item" href="#">Ingresar Chequeo</a></li>
+	    <li><a class="dropdown-item" href="#">Listar Chequeos</a></li>
+	  </ul>
+	</div>
+	
+	<div class="dropdown pt-4">
+	  <button class="btn btn-dark border border-light dropdown-toggle col-8" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+	    Administrar Accidentes
+	  </button>
+	  <ul class="dropdown-menu dropdown-menu-dark">
+	    <li><a class="dropdown-item" href="#">Ingresar Accidente</a></li>
+	    <li><a class="dropdown-item" href="#">Listar Accidentes</a></li>
+	  </ul>
+	</div>
+	
   </div>
 </div>
 

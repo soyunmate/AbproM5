@@ -29,9 +29,13 @@ pageEncoding="UTF-8"%>
         <h1 class="display-1 titulo-principal" style="opacity: 75%">Bienvenidos</h1>
       </div>
     </header>
+<div class="container-fluid color-container pt-3" 
+	style="background: rgb(204,167,118);
+background: radial-gradient(circle, rgba(204,167,118,1) 40%, rgba(0,0,0,1) 70%);"
 
+>
     <div
-      class="container-fluid text-center pt-3 d-flex justify-content-center"
+      class="container text-center pt-3 d-flex justify-content-center py-3  rounded-pill"
       id="principal-container"
     >
       
@@ -72,11 +76,11 @@ pageEncoding="UTF-8"%>
     </div>
 
     <div
-      class="servicios container-fluid text-center"
+      class="servicios container-fluid text-center d-flex flex-column justify-content-center align-items-center"
     >
-      <h1 class="display-3"> Nuestros Servicios</h1>
+      <h1 class="display-3 pt-5" style="opacity: 75%"> Nuestros Servicios</h1>
       
-      <div id="carouselExampleDark" class="carousel carousel-dark slide mt-5">
+      <div id="carouselExampleDark" class="carousel  slide mt-5 col-10">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -116,6 +120,8 @@ pageEncoding="UTF-8"%>
 </div>
       <img alt="" src="vistas/img/separator-2.png" class="w-25">
     </div>
+    
+</div>
     <%@ include file="footer.jsp" %>
 
     <script
