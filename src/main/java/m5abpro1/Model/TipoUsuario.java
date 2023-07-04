@@ -4,9 +4,4 @@ public enum TipoUsuario {
 	CLIENTE,
 	ADMINISTRATIVO,
 	PROFESIONAL
-
-
-
-
-	
 }

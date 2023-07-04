@@ -47,8 +47,29 @@ public class CrearUsuario extends HttpServlet {
 		
 		String nombre = request.getParameter("nombre");
 		String tipo = request.getParameter("tipo");
+		String pw = request.getParameter("pw");
+		System.out.println(tipo);
+		
+		TipoUsuario tipoEnum = null;
+		
+		
+		if (tipo.equals("Cliente")) {
+            tipoEnum = TipoUsuario.CLIENTE;
+            user.setRut(request.getParameter("rut"));
+           
+        } else if (tipo.equals("Profesional")) {
+        	tipoEnum = TipoUsuario.PROFESIONAL;
+        	user.setTitulo(request.getParameter("titulo"));
+        	
+        } else if (tipo.equals("Administrativo")) {
+        	tipoEnum = TipoUsuario.ADMINISTRATIVO;
+        	user.setArea(request.getParameter("area"));
+        }
+		
 		user.setNombre(nombre);
-		user.setTipo(tipo);
+		user.setTipo(tipoEnum);
+		user.setPw(pw);
+
 		uDAO.create(user);
 		
 		

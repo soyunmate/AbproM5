@@ -25,20 +25,18 @@
             <a class="nav-link active" aria-current="page" href="Inicio"
               >Inicio</a
             >
+            <c:if test="${sessionScope.user != null}">
+            	<a class="nav-link btn-menu-principal" href="#menu-desplegable" data-bs-toggle="offcanvas" aria-controls="menu-desplegable">Menu Principal</a>
+            </c:if>
+            <c:if test="${sessionScope.tipo eq 'Cliente'}">
+            	<a class="nav-link" href="Contacto" >Contacto</a>
+            </c:if>
             
-            <a class="nav-link" href="#menu-desplegable" data-bs-toggle="offcanvas" aria-controls="menu-desplegable">Menu Principal</a>
-            <a class="nav-link" href="Contacto" >Contacto</a>
-            
-            
-            
-            
-<!--             <a class="nav-link" href="CrearCapacitacion">Crear Capacitaciones</a> -->
-<!--             <a class="nav-link" href="ListarCapacitacion">Listar Capacitaciones</a> -->
             
             <c:if test="${sessionScope.user == null}">
-			<%--             <% if(request.getSession().getAttribute("user") == null) {%> --%>
+			
            		 <a class="nav-link" href="Login">Login</a>
-			<%--             <% } %> --%>
+			
             </c:if>
           </div>
         </div>
@@ -108,12 +106,15 @@
   		"
     >
   <div class="offcanvas-header text-center">
-    <h5 class="offcanvas-title" id="menu-desplegable-Label">Menu Principal </h5>
+    <h5 class="offcanvas-title" id="menu-desplegable-Label">Menu Principal: </h5>
+    <h5 class="var-tipoUsuario mt-2" id="tipoUsuario"> <% String tipoUsuario = (String)request.getSession().getAttribute("tipo"); %>
+    	<%= tipoUsuario != null ? tipoUsuario : ""  %>
+    </h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body text-center">
   
-		<div class="dropdown">
+		<div class="dropdown admin-view">
 	  <button class="btn btn-dark border border-light dropdown-toggle col-8" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 	    Administrar Usuarios
 	  </button>
@@ -124,7 +125,7 @@
 	  </ul>
 	</div>
 
-	<div class="dropdown pt-4">
+	<div class="dropdown pt-4 client-view">
 	  <button class="btn btn-dark border border-light  dropdown-toggle col-8" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 	    Administrar Capacitaciones
 	  </button>
@@ -135,7 +136,7 @@
 	  </ul>
 	</div>
 
-	<div class="dropdown pt-4">
+	<div class="dropdown pt-4 prof-view">
 	  <button class="btn btn-dark border border-light dropdown-toggle col-8" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 	    Administrar Asesorias
 	  </button>
@@ -145,7 +146,7 @@
 	  </ul>
 	</div>
 	
-	<div class="dropdown pt-4">
+	<div class="dropdown pt-4 client-view">
 	  <button class="btn btn-dark border border-light dropdown-toggle col-8" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 	    Administrar Asistentes
 	  </button>
@@ -155,7 +156,7 @@
 	  </ul>
 	</div>
 	
-		<div class="dropdown pt-4">
+		<div class="dropdown pt-4 admin-view">
 	  <button class="btn btn-dark border border-light dropdown-toggle col-8" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 	    Administrar Pagos
 	  </button>
@@ -165,7 +166,7 @@
 	  </ul>
 	</div>
 	
-	<div class="dropdown pt-4">
+	<div class="dropdown pt-4 prof-view">
 	  <button class="btn btn-dark border border-light dropdown-toggle col-8" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 	    Administrar Visitas
 	  </button>
@@ -175,7 +176,7 @@
 	  </ul>
 	</div>
 	
-	<div class="dropdown pt-4">
+	<div class="dropdown pt-4 admin-view">
 	  <button class="btn btn-dark border border-light dropdown-toggle col-8" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 	    Administrar Chequeos
 	  </button>
@@ -185,7 +186,7 @@
 	  </ul>
 	</div>
 	
-	<div class="dropdown pt-4">
+	<div class="dropdown pt-4 client-view">
 	  <button class="btn btn-dark border border-light dropdown-toggle col-8" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 	    Administrar Accidentes
 	  </button>
@@ -197,6 +198,8 @@
 	
   </div>
 </div>
+ <script defer type="text/javascript" src="vistas/scripts/script.js">
 
+</script>
 </body>
 </html>

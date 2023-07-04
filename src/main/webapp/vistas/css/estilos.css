@@ -179,6 +179,10 @@ carousel .carousel-item {
 	min-height: 600px;
 }
 
+td {
+	max-height: 20px;
+}
+
 /* Off canvas*/
 
 .boton-menu {

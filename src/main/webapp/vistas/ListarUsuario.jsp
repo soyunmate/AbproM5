@@ -25,7 +25,7 @@
 <body>
 <%@ include file="NavBar.jsp" %>
 <div
-      class="container-fluid pt-3 lista-usuarios"
+      class="container-fluid py-3 lista-usuarios"
       id="principal-container"
     >
     <div class="table-container container col-8 justify-content-center px-5 pt-5 ">
@@ -51,10 +51,10 @@
             		<td>${user.nombre}</td>
            		 	<td>${user.tipo}</td>
            		 	<td> 
-           		 		<a href="EditarUsuario?${user.id}" class="navbar-brand ">
+           		 		<a href="EditarUsuario?${user.id}" class="navbar-brand admin-view">
            		 		 <i class="bi bi-pencil-square fs-3"></i>
            		 		 </a> 
-           		 		 <a href="EliminarUsuario?${user.id}" class="navbar-brand ">
+           		 		 <a href="EliminarUsuario?${user.id}" class="navbar-brand admin-view">
            		 		 <i class="bi bi-trash fs-3"></i>
            		 		 </a> 
            		 	</td>

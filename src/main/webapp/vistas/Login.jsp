@@ -52,7 +52,7 @@
             />
           </div>
           <div class="text-center">
-          <button type="submit" class="btn btn-dark col-4 align-self-center border border-light">Login</button>
+          <button type="submit" class="btn btn-dark  col-4 align-self-center border border-light">Login</button>
         	</div>
         </form>
       </div>
