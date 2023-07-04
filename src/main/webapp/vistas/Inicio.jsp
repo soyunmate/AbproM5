@@ -35,12 +35,12 @@ background: radial-gradient(circle, rgba(204,167,118,1) 40%, rgba(0,0,0,1) 70%);
 
 >
     <div
-      class="container text-center pt-3 d-flex justify-content-center py-3  rounded-pill"
+      class="container text-center pt-3 d-flex justify-content-center py-3 border border-black  rounded"
       id="principal-container"
     >
       
       <div class="card-container container row rows-col-4 align-items-center ">
-      		<div class="container presentation-card card-1 col">
+      		<div class="container presentation-card card-1 col col-sm-12 col-lg-6 col-xl-4">
       			<p class="display-5 text-center fs-4">¿Quíenes somos?</p>
       			
       			<p>
@@ -52,7 +52,7 @@ background: radial-gradient(circle, rgba(204,167,118,1) 40%, rgba(0,0,0,1) 70%);
       			</div>
       		
       		</div>
-      		<div class="container presentation-card card-2 col">
+      		<div class="container presentation-card card-2 col  col-sm-12 col-lg-6 col-xl-4">
       			<p class="display-5 text-center fs-4">Nuestra Misión</p>
       			<p>
       				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam blandit arcu ut ornare dignissim. In eget sem quis felis volutpat mollis nec in leo. In ut eros ligula. 
@@ -61,7 +61,7 @@ background: radial-gradient(circle, rgba(204,167,118,1) 40%, rgba(0,0,0,1) 70%);
       				<i class="bi bi-person-workspace"></i>
       			</div>
       		</div>
-      		<div class="container presentation-card card-3 col">
+      		<div class="container presentation-card card-3 col col-sm-12 col-lg-6 col-xl-4">
       			<p class="display-5 text-center fs-4">Plan de Pagos</p>
       			<p>
       				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam blandit arcu ut ornare dignissim. In eget sem quis felis volutpat mollis nec in leo. In ut eros ligula. 

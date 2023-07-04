@@ -1,4 +1,4 @@
-package m5abpro1.Servlet;
+package m5abpro1.Controller;
 
 import java.io.IOException;
 
@@ -9,7 +9,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import m5abpro1.Model.TipoUsuario;
 import m5abpro1.Model.Usuario;
-import m5abpro1.Model.UsuarioDAOImpl;
+import m5abpro1.Model.DAO.UsuarioDAOImpl;
 
 /**
  * Servlet implementation class CrearUsuario

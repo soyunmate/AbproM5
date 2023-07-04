@@ -1,4 +1,4 @@
-package m5abpro1.Model;
+package m5abpro1.Model.DAO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,8 +8,8 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import m5abpro1.Model.Capacitacion;
 import m5abpro1.Model.Conexion.Conexion;
-import m5abpro1.Model.DAO.ICapacitacionDAO;
 
 public class CapacitacionDAOImpl implements ICapacitacionDAO{
 	private Connection cn = null;

@@ -20,7 +20,7 @@ const area = document.querySelector(".opt-area");
 
 
 //Formulario
-btnEnviar.style.display = "none";
+//btnEnviar.style.display = "none";
 btnsTipo.forEach(c => {
 	
 	c.addEventListener("click", function() {
@@ -73,6 +73,7 @@ const showView = function(arr) {
 
 
 menuPrincipal.addEventListener("click", function () {
+	console.log("pudu");
 	
 	if (tipoUsuario.textContent.valueOf().toUpperCase().trim() === "ADMINISTRATIVO") {
 		console.log("work")

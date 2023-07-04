@@ -1,27 +1,22 @@
-package m5abpro1.Servlet;
-
-import java.io.IOException;
-import java.util.List;
+package m5abpro1.Controller;
 
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpSession;
-import m5abpro1.Model.Capacitacion;
-import m5abpro1.Model.Usuario;
-import m5abpro1.Model.UsuarioDAOImpl;
+import java.io.IOException;
 
 /**
- * Servlet implementation class ListarUsuario
+ * Servlet implementation class EditarCapacitacion
  */
-public class ListarUsuario extends HttpServlet {
+public class EditarCapacitacion extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ListarUsuario() {
+    public EditarCapacitacion() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -30,16 +25,8 @@ public class ListarUsuario extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		HttpSession sesion = request.getSession();
-		
-		if (sesion.getAttribute("user") != null) {
-		UsuarioDAOImpl uDAO = new UsuarioDAOImpl();
-		List<Usuario> listado = uDAO.readAll();
-		request.setAttribute("listado", listado);
-		getServletContext().getRequestDispatcher("/vistas/ListarUsuario.jsp").forward(request, response);
-		} else {
-			getServletContext().getRequestDispatcher("/vistas/Login.jsp").forward(request, response);
-		}
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**

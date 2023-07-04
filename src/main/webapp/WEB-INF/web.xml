@@ -13,7 +13,7 @@
     <description></description>
     <display-name>Inicio</display-name>
     <servlet-name>Inicio</servlet-name>
-    <servlet-class>m5abpro1.Servlet.Inicio</servlet-class>
+    <servlet-class>m5abpro1.Controller.Inicio</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Inicio</servlet-name>
@@ -23,7 +23,7 @@
     <description></description>
     <display-name>Contacto</display-name>
     <servlet-name>Contacto</servlet-name>
-    <servlet-class>m5abpro1.Servlet.Contacto</servlet-class>
+    <servlet-class>m5abpro1.Controller.Contacto</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Contacto</servlet-name>
@@ -33,7 +33,7 @@
     <description></description>
     <display-name>CrearCapacitacion</display-name>
     <servlet-name>CrearCapacitacion</servlet-name>
-    <servlet-class>m5abpro1.Servlet.CrearCapacitacion</servlet-class>
+    <servlet-class>m5abpro1.Controller.CrearCapacitacion</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>CrearCapacitacion</servlet-name>
@@ -43,7 +43,7 @@
     <description></description>
     <display-name>Login</display-name>
     <servlet-name>Login</servlet-name>
-    <servlet-class>m5abpro1.Servlet.Login</servlet-class>
+    <servlet-class>m5abpro1.Controller.Login</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Login</servlet-name>
@@ -53,7 +53,7 @@
     <description></description>
     <display-name>ListarCapacitacion</display-name>
     <servlet-name>ListarCapacitacion</servlet-name>
-    <servlet-class>m5abpro1.Servlet.ListarCapacitacion</servlet-class>
+    <servlet-class>m5abpro1.Controller.ListarCapacitacion</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>ListarCapacitacion</servlet-name>
@@ -63,7 +63,7 @@
     <description></description>
     <display-name>Logout</display-name>
     <servlet-name>Logout</servlet-name>
-    <servlet-class>m5abpro1.Servlet.Logout</servlet-class>
+    <servlet-class>m5abpro1.Controller.Logout</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Logout</servlet-name>
@@ -73,7 +73,7 @@
     <description></description>
     <display-name>Test</display-name>
     <servlet-name>Test</servlet-name>
-    <servlet-class>m5abpro1.Servlet.Test</servlet-class>
+    <servlet-class>m5abpro1.Controller.Test</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Test</servlet-name>
@@ -83,7 +83,7 @@
     <description></description>
     <display-name>EliminarCapacitacion</display-name>
     <servlet-name>EliminarCapacitacion</servlet-name>
-    <servlet-class>m5abpro1.Servlet.EliminarCapacitacion</servlet-class>
+    <servlet-class>m5abpro1.Controller.EliminarCapacitacion</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>EliminarCapacitacion</servlet-name>
@@ -93,7 +93,7 @@
     <description></description>
     <display-name>EditarCapacitacion</display-name>
     <servlet-name>EditarCapacitacion</servlet-name>
-    <servlet-class>m5abpro1.Servlet.EditarCapacitacion</servlet-class>
+    <servlet-class>m5abpro1.Controller.EditarCapacitacion</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>EditarCapacitacion</servlet-name>
@@ -103,7 +103,7 @@
     <description></description>
     <display-name>CrearUsuario</display-name>
     <servlet-name>CrearUsuario</servlet-name>
-    <servlet-class>m5abpro1.Servlet.CrearUsuario</servlet-class>
+    <servlet-class>m5abpro1.Controller.CrearUsuario</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>CrearUsuario</servlet-name>
@@ -113,7 +113,7 @@
     <description></description>
     <display-name>ListarUsuario</display-name>
     <servlet-name>ListarUsuario</servlet-name>
-    <servlet-class>m5abpro1.Servlet.ListarUsuario</servlet-class>
+    <servlet-class>m5abpro1.Controller.ListarUsuario</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>ListarUsuario</servlet-name>

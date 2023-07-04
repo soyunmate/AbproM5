@@ -135,7 +135,7 @@ header {
   color: white;
   font-family: "Times New Roman", Times, serif;
 }
-
+/** 
 .presentation-card.card-1 {
 	border-right: 1px solid black;
 }
@@ -143,6 +143,7 @@ header {
 .presentation-card.card-3 {
 	border-left: 1px solid black;
 }
+*/
 
 /* carousel */
 
@@ -235,3 +236,48 @@ textarea {
   	display: none;
   }
 }
+
+@media (width >= 1200px) {
+  .presentation-card.card-1 {
+	border-right: 1px solid black;
+	border-bottom: none;
+	}
+	
+
+.presentation-card.card-3 {
+	border-left: 1px solid black;
+	border-top: none;
+	}
+}
+
+@media (width > 991px) and (width < 1200px ) {
+	.presentation-card.card-2,
+	.presentation-card.card-1
+	{
+		border-bottom: 1px solid black;
+		padding: inherit;
+	}
+	
+	.presentation-card.card-3 {
+	
+		border-bottom: 1px solid black;
+	}
+	
+}
+
+
+
+@media (width < 991px) {
+  .presentation-card.card-1 {
+	border-bottom: 1px solid black;
+	}
+
+	.presentation-card.card-3 {
+	border-top: 1px solid black;
+	}
+}
+
+
+/** test */
+
+

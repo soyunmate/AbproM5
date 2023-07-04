@@ -1,4 +1,4 @@
-package m5abpro1.Servlet;
+package m5abpro1.Controller;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -8,15 +8,15 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Servlet implementation class EditarCapacitacion
+ * Servlet implementation class EliminarCapacitacion
  */
-public class EditarCapacitacion extends HttpServlet {
+public class EliminarCapacitacion extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public EditarCapacitacion() {
+    public EliminarCapacitacion() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -25,8 +25,9 @@ public class EditarCapacitacion extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		System.out.println(request.getQueryString());
+		
+		getServletContext().getRequestDispatcher("/ListarCapacitacion").forward(request, response);
 	}
 
 	/**
