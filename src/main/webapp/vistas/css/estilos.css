@@ -121,6 +121,11 @@ header {
 	background-position: center;
 }
 
+#modalUserForm {
+	color: white;
+}
+
+
 
 /* Inicio jsp*/
 .servicios {

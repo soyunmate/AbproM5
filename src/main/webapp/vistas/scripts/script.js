@@ -1,4 +1,3 @@
-"use strict";
 const menuPrincipal = document.querySelector(".btn-menu-principal");
 const tipoUsuario = document.getElementById("tipoUsuario");
 const adminViews = document.querySelectorAll(".admin-view");
@@ -30,18 +29,28 @@ btnsTipo.forEach(c => {
 				titulo.style.display = "none";
 				area.style.display = "none";
 				
+				rut.required = "true";
+				titulo.ariaRequired = "false";
+				area.required = "false";
+				
 				
 			}
 			if (c.textContent === "Profesional") {
 				rut.style.display = "none";
 				titulo.style.display = "block";
 				area.style.display = "none";
+				rut.required = "false";
+				titulo.ariaRequired = "true";
+				area.required = "false";
 			
 			}
 			if (c.textContent === "Administrativo") {
 				rut.style.display = "none";
 				titulo.style.display = "none";
 				area.style.display = "block";
+				rut.required = "true";
+				titulo.ariaRequired = "false";
+				area.required = "true";
 				
 			}
 		
@@ -94,7 +103,26 @@ menuPrincipal.addEventListener("click", function () {
 		showView(profViews)
 	}
 	
+	if (tipoUsuario.textContent.valueOf().toUpperCase().trim() === "SERVERADMIN") {
+		console.log("work")
+		showView(clientViews);
+		showView(adminViews);
+		showView(profViews)
+	}
+	
 	
 });
+
+
+// Modal Edit user 
+
+const btnsEdit = document.querySelectorAll("edit-user-btn");
+
+btnsEdit.forEach(btn => {
+	btn.addEventListener("click", function() {
+		let id = btn.dataset.user-id;
+		console.log(id)
+	})
+})
 
 

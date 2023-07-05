@@ -44,7 +44,7 @@ public class Login extends HttpServlet {
 		UsuarioDAOImpl uDAO = new UsuarioDAOImpl();
 		List<Usuario> listado = uDAO.readAll();
 		Boolean isLogged = false;
-		String tipo = "";
+		String tipo = "serverAdmin";
 		int id = 0;
 		
 		for(Usuario u : listado) {
