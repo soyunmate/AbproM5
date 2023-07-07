@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,13 +21,19 @@
               required
             />
           </div>
+          
+          <c:set var="currentUrl" value="${pageContext.request.requestURL}" />
+			<c:if test="${fn:endsWith(currentUrl, '/CrearUsuario.jsp')}">
+          
           <div class="mb-3 ">
             <label for="pw">Contraseña</label>
-    		<input type="password" class="form-control" id="pw" name="pw" placeholder="Contraseña">
+    		<input type="password" class="form-control" id="pw" name="pw" placeholder="Contraseña" required>
           </div>
+          
+          </c:if>
           <label for="TipoUsuario">Tipo de Usuario</label>
           <div class="btn-group mb-3" name="TipoUsuario" role="group" data-toggle="buttons" aria-label="Basic radio toggle button group">
-			  <input type="radio" value="Cliente" class="btn-check" id="Cliente" name="tipo" autocomplete="off">
+			  <input type="radio" value="Cliente" class="btn-check" id="Cliente" name="tipo" autocomplete="off" required>
 			  <label class="btn btn-outline-light btn-dark btn-tipo" for="Cliente">Cliente</label>	
 			  <input type="radio" value="Profesional" class="btn-check" id="Profesional" name="tipo" autocomplete="off">
 			  <label class="btn btn-outline-light btn-dark btn-tipo" for="Profesional">Profesional</label>

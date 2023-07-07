@@ -101,7 +101,9 @@
     
     <div class="offcanvas offcanvas-start text-bg-dark bg-image" tabindex="-1" id="menu-desplegable" aria-labelledby="menu-desplegable-Label"
     	style="
-    	background-image: url('https://images.pexels.com/photos/716398/pexels-photo-716398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    	background-image: url('vistas/css/img/offcanvasimg3.jpeg');
+    	background-position: center;
+		background-size: cover;
     	height: 100vh;
   		"
     >
@@ -198,7 +200,7 @@
 	
   </div>
 </div>
- <script defer type="text/javascript" src="vistas/scripts/script.js">
+ 
 
 </script>
 </body>

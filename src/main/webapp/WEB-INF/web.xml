@@ -119,4 +119,24 @@
     <servlet-name>ListarUsuario</servlet-name>
     <url-pattern>/ListarUsuario</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EditarUsuario</display-name>
+    <servlet-name>EditarUsuario</servlet-name>
+    <servlet-class>m5abpro1.Controller.EditarUsuario</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditarUsuario</servlet-name>
+    <url-pattern>/EditarUsuario</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EliminarUsuario</display-name>
+    <servlet-name>EliminarUsuario</servlet-name>
+    <servlet-class>m5abpro1.Controller.EliminarUsuario</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EliminarUsuario</servlet-name>
+    <url-pattern>/EliminarUsuario</url-pattern>
+  </servlet-mapping>
 </web-app>

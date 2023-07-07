@@ -41,8 +41,20 @@ public class CapacitacionDAOImpl implements ICapacitacionDAO{
 
 	@Override
 	public Capacitacion readOne(int id) {
-		// TODO Auto-generated method stub
-		return null;
+		String sql = "SELECT id, nombre, detalle FROM capacitaciones WHERE id="+id;
+		Capacitacion cap = new Capacitacion();
+		
+		try {
+			cn = Conexion.getConn();
+			
+			
+			
+		} catch (Exception e) {			
+			e.printStackTrace();
+		}
+		
+		
+		return cap;
 	}
 
 	@Override

@@ -1,3 +1,4 @@
+"use strict";
 const menuPrincipal = document.querySelector(".btn-menu-principal");
 const tipoUsuario = document.getElementById("tipoUsuario");
 const adminViews = document.querySelectorAll(".admin-view");
@@ -18,6 +19,8 @@ const titulo = document.querySelector(".opt-titulo");
 const area = document.querySelector(".opt-area");
 
 
+
+
 //Formulario
 //btnEnviar.style.display = "none";
 btnsTipo.forEach(c => {
@@ -28,10 +31,10 @@ btnsTipo.forEach(c => {
 				rut.style.display = "block";
 				titulo.style.display = "none";
 				area.style.display = "none";
+				extraField1.setAttribute('required', 'required');
+				extraField2.removeAttribute('required');
+				extraField3.removeAttribute('required');
 				
-				rut.required = "true";
-				titulo.ariaRequired = "false";
-				area.required = "false";
 				
 				
 			}
@@ -39,18 +42,18 @@ btnsTipo.forEach(c => {
 				rut.style.display = "none";
 				titulo.style.display = "block";
 				area.style.display = "none";
-				rut.required = "false";
-				titulo.ariaRequired = "true";
-				area.required = "false";
+				extraField1.removeAttribute('required');
+				extraField2.setAttribute('required', 'required');
+				extraField3.removeAttribute('required');
 			
 			}
 			if (c.textContent === "Administrativo") {
 				rut.style.display = "none";
 				titulo.style.display = "none";
 				area.style.display = "block";
-				rut.required = "true";
-				titulo.ariaRequired = "false";
-				area.required = "true";
+				extraField1.removeAttribute('required');
+				extraField2.removeAttribute('required');
+				extraField3.setAttribute('required', 'required');
 				
 			}
 		
@@ -115,14 +118,33 @@ menuPrincipal.addEventListener("click", function () {
 
 
 // Modal Edit user 
-
-const btnsEdit = document.querySelectorAll("edit-user-btn");
-
+const userIdform = document.getElementById("user-id-form-field");
+const userIdValue = document.getElementById("hidden-user-id");
+const btnsEdit = document.querySelectorAll(".edit-user-btn");
+console.log(btnsEdit)
 btnsEdit.forEach(btn => {
 	btn.addEventListener("click", function() {
-		let id = btn.dataset.user-id;
-		console.log(id)
+		const id = btn.dataset.userId;
+		userIdform.textContent = id;
+		userIdValue.value = userIdform.textContent;
+		
 	})
 })
 
+
+// Modal delete user:
+const userDelId = document.getElementById("user-id-form-field-delete");
+const userDelValues = document.getElementById("hidden-user-id-delete");
+const btnsDelete = document.querySelectorAll(".delete-user-btn");
+
+btnsDelete.forEach(btn => {
+	
+	btn.addEventListener("click", function() {
+		const id = btn.dataset.userId;
+		userDelId.textContent = id;
+		userDelValues.value = userDelId.textContent;
+		
+	})
+	
+})
 

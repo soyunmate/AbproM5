@@ -5,7 +5,7 @@ pageEncoding="UTF-8"%>
   <head>
     <meta charset="UTF-8" />
     <title>Asesorias S.A - HomePage</title>
-    <link href="vistas/css/estilos.css" rel="stylesheet" type="text/css" />
+    
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,6 +17,8 @@ pageEncoding="UTF-8"%>
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+    <link href="vistas/css/estilos.css" rel="stylesheet" type="text/css" />
+    <script defer type="text/javascript" src="vistas/scripts/script.js"></script>
   
   </head>
   <body>
@@ -40,7 +42,7 @@ background: radial-gradient(circle, rgba(204,167,118,1) 40%, rgba(0,0,0,1) 70%);
     >
       
       <div class="card-container container row rows-col-4 align-items-center ">
-      		<div class="container presentation-card card-1 col col-sm-12 col-lg-6 col-xl-4">
+      		<div class="container presentation-card card-1 col col-sm-12 col-lg-6 col-xl-4 py-2">
       			<p class="display-5 text-center fs-4">¿Quíenes somos?</p>
       			
       			<p>
@@ -52,7 +54,7 @@ background: radial-gradient(circle, rgba(204,167,118,1) 40%, rgba(0,0,0,1) 70%);
       			</div>
       		
       		</div>
-      		<div class="container presentation-card card-2 col  col-sm-12 col-lg-6 col-xl-4">
+      		<div class="container presentation-card card-2 col  col-sm-12 col-lg-6 col-xl-4 py-2">
       			<p class="display-5 text-center fs-4">Nuestra Misión</p>
       			<p>
       				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam blandit arcu ut ornare dignissim. In eget sem quis felis volutpat mollis nec in leo. In ut eros ligula. 
@@ -61,7 +63,7 @@ background: radial-gradient(circle, rgba(204,167,118,1) 40%, rgba(0,0,0,1) 70%);
       				<i class="bi bi-person-workspace"></i>
       			</div>
       		</div>
-      		<div class="container presentation-card card-3 col col-sm-12 col-lg-6 col-xl-4">
+      		<div class="container presentation-card card-3 col col-sm-12 col-lg-6 col-xl-4 py-2">
       			<p class="display-5 text-center fs-4">Plan de Pagos</p>
       			<p>
       				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam blandit arcu ut ornare dignissim. In eget sem quis felis volutpat mollis nec in leo. In ut eros ligula. 
@@ -76,7 +78,7 @@ background: radial-gradient(circle, rgba(204,167,118,1) 40%, rgba(0,0,0,1) 70%);
     </div>
 
     <div
-      class="servicios container-fluid text-center d-flex flex-column justify-content-center align-items-center"
+      class="servicios container-fluid pb-5 text-center d-flex flex-column justify-content-center align-items-center"
     >
       <h1 class="display-3 pt-5" style="opacity: 75%"> Nuestros Servicios</h1>
       
@@ -117,10 +119,10 @@ background: radial-gradient(circle, rgba(204,167,118,1) 40%, rgba(0,0,0,1) 70%);
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
-</div>
-      <img alt="" src="vistas/img/separator-2.png" class="w-25">
-    </div>
+
     
+</div>
+</div>
 </div>
     <%@ include file="footer.jsp" %>
 

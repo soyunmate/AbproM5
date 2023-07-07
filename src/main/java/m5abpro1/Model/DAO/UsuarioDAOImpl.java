@@ -125,19 +125,73 @@ public class UsuarioDAOImpl implements IUsuarioDAO {
 
 	@Override
 	public void update(Usuario u) {
-		// TODO Auto-generated method stub
+		int id = u.getId();
+		String query = "";
+		String campoExtra = "";
+		String tipo = "";
+		
+		if(u.getTipo() == TipoUsuario.CLIENTE) {
+			 query = "UPDATE usuarios SET nombre=?, tipo=?,rut=? WHERE id="+id;
+			 campoExtra = u.getRut();
+			 tipo = "Cliente";
+		}
+		
+		if(u.getTipo() == TipoUsuario.PROFESIONAL) {
+			 query = "UPDATE usuarios SET nombre=?, tipo=?,titulo=? WHERE id="+id;
+			 campoExtra = u.getTitulo();
+			 tipo = "Profesional";
+		}
+
+		if(u.getTipo() == TipoUsuario.ADMINISTRATIVO) {
+			 query = "UPDATE usuarios SET nombre=?, tipo=?,areaTrabajo=? WHERE id="+id;
+			 campoExtra = u.getArea();
+			 tipo = "Administrativo";
+		}
+		
+		
+		try {
+			cn = Conexion.getConn();
+			PreparedStatement ppStm = cn.prepareStatement(query);
+			ppStm.setString(1, u.getNombre());
+			ppStm.setString(2, tipo);
+			ppStm.setString(3, campoExtra);
+			
+			int result = ppStm.executeUpdate();
+			
+			if (result > 0) {
+				System.out.println("Registro actualizado");
+			} else {
+				System.out.println("Error al actualizar registro");
+			}
+			
+			ppStm.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		
+		
 		
 	}
 
 	@Override
 	public void deleteById(int id) {
-		// TODO Auto-generated method stub
+		String query = "DELETE FROM usuarios WHERE id="+id;
+		
+		try {
+			cn = Conexion.getConn();
+			Statement stm = cn.createStatement();
+			stm.execute(query);
+			stm.close();
+		} catch (SQLException e) {
+			
+		}
 		
 	}
 
 	@Override
 	public void delete(Usuario u) {
-		// TODO Auto-generated method stub
+		deleteById(u.getId());
 		
 	}
 

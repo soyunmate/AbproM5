@@ -23,16 +23,16 @@
   src: url('fonts/ZilapSleepGrunge.ttf');
 }
 
-
-
-
+body {
+	font-family: "raleway";
+}
 
 
 /* Header*/
 header {
   height: 650px;
-	/*background-image: url("../img/inicioImg.jpeg");*/
-  background-image: url("https://images.pexels.com/photos/1067465/pexels-photo-1067465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+   background-image: url("img/inicioImg.jpeg");
+/*   background-image: url("https://images.pexels.com/photos/1067465/pexels-photo-1067465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
   background-size: cover;
   background-position: 50px;
 }
@@ -48,21 +48,23 @@ header {
 /* container principal */
 
 #principal-container {
-   background-color: rgba(204,197,185, .45);
- 
+  background-color: rgba(204,197,185, .65);
+ 	font-weight: 500;
+ 	font-size: 1.1rem;
   height: auto;
   min-height: 200px;
 }
 
 .titulo-principal {
   color: white;
-  font-weight: bolder;
+ 
 }
 
 /* contacto jsp*/
 
 .contacto {
-	background-image: url("https://images.pexels.com/photos/401107/pexels-photo-401107.jpeg");
+	background-image: url("img/contactoimg.jpeg");
+/* 	background-image: url("https://images.pexels.com/photos/401107/pexels-photo-401107.jpeg"); */
 	background-size: cover;
 	height: auto;
     min-height: 200px;
@@ -79,7 +81,8 @@ header {
 /* Crear Capacitacion*/
 
 .crear-capacitacion {
-	background-image: url("https://images.pexels.com/photos/425183/pexels-photo-425183.jpeg");
+	background-image: url("img/crearcapimg.jpeg");
+/* 	background-image: url("https://images.pexels.com/photos/425183/pexels-photo-425183.jpeg"); */
 	background-size: cover;
 	background-position: center;
 	height: auto;
@@ -94,7 +97,8 @@ header {
 /* Listar capacitaciones jsp*/
 
 #principal-container.lista-capacitaciones {
-	background-image: url("https://images.pexels.com/photos/356048/pexels-photo-356048.jpeg");
+	background-image: url("img/listcapimg.jpeg");
+/* 	background-image: url("https://images.pexels.com/photos/356048/pexels-photo-356048.jpeg"); */
 	background-size: cover;
 	background-position: center;
 }
@@ -102,7 +106,8 @@ header {
 /* Crear Usuario*/
 
 .crear-usuario {
-	background-image: url("https://images.pexels.com/photos/543351/pexels-photo-543351.jpeg");
+	background-image: url("img/crearuserimg.jpeg");
+/* 	background-image: url("https://images.pexels.com/photos/543351/pexels-photo-543351.jpeg"); */
 	background-size: cover;
 	background-position: center;
 	color: white
@@ -116,7 +121,8 @@ header {
 /* Listar usuarios*/
 
 .lista-usuarios {
-	background-image: url("https://images.pexels.com/photos/1439164/pexels-photo-1439164.jpeg");
+	background-image: url("img/listcapimg.jpeg");
+/* 	background-image: url("https://images.pexels.com/photos/1439164/pexels-photo-1439164.jpeg"); */
 	background-size: cover;
 	background-position: center;
 }
@@ -129,8 +135,6 @@ header {
 
 /* Inicio jsp*/
 .servicios {
-  /*background-color: #403D39;*/
-  /*background-color: #CCC5B9;*/
   color: white;
   height: auto;
   min-height: 300px;
@@ -138,17 +142,9 @@ header {
 
 .servicio.card {
   color: white;
-  font-family: "Times New Roman", Times, serif;
-}
-/** 
-.presentation-card.card-1 {
-	border-right: 1px solid black;
+  
 }
 
-.presentation-card.card-3 {
-	border-left: 1px solid black;
-}
-*/
 
 /* carousel */
 
@@ -174,7 +170,8 @@ carousel .carousel-item {
 }
 
 #principal-container.login-container {
-	background-image: url("https://images.pexels.com/photos/8686320/pexels-photo-8686320.jpeg");
+	background-image: url("img/loginpageimg.jpeg");
+/* 	background-image: url("https://images.pexels.com/photos/8686320/pexels-photo-8686320.jpeg"); */
 	background-position: center;
 	background-size: cover;
 }

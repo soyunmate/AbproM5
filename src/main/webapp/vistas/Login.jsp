@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Asesorias S.A - Login</title>
-<link href="vistas/css/estilos.css" rel="stylesheet" type="text/css" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,8 +17,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
-
+	<link href="vistas/css/estilos.css" rel="stylesheet" type="text/css" />
+	<script defer type="text/javascript" src="vistas/scripts/script.js"></script>
+	
 </head>
+
 <body>
 <%@ include file="NavBar.jsp" %>
 
