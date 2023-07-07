@@ -25,9 +25,22 @@ Instrucciones de Implementación:
 5. Compilar y ejecutar la aplicación web en un servidor local, como Apache Tomcat o Jetty. Asegúrate de configurar correctamente el servidor y los archivos de despliegue.
 6. Acceder a la aplicación web a través de un navegador web compatible. Utiliza la URL proporcionada por el servidor local para acceder a la página de inicio del portal.
 
+Claves de Acceso:
+- ServerAdmin: Puede visualizar todo el contenido del sitio
+	user: admin
+	pw: 1234
+- Administrativo: puede visualizar y realizar tareas administrativas
+	user: admintest
+	pw: 1234
+- Cliente: visualiza y realiza tareas de Cliente
+	user: client
+	pw: 1234
+- Profesional: visualiza y realiza tareas de profesional
+	user: prof
+	pw: 1234
+
 Evidencia de Pruebas:
 Adjuntamos cuatro capturas de pantalla en la carpeta "docs" que demuestran el funcionamiento exitoso del proyecto en un entorno local. Las capturas de pantalla incluyen ejemplos de diferentes funcionalidades, como la creación de usuarios, la edición de datos, el registro de capacitaciones y la visualización de reportes.
 
-Para obtener más detalles sobre la implementación y el funcionamiento de cada funcionalidad, consulte la documentación proporcionada en la carpeta "docs" del repositorio.
 
 ¡Gracias por revisar nuestro proyecto! Si tiene alguna pregunta o necesita más información, no dude en ponerse en contacto con nuestro equipo.
