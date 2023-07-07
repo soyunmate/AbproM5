@@ -52,10 +52,16 @@
             		<td>${user.nombre}</td>
            		 	<td>${user.tipo}</td>
            		 	<td> 
-           		 		<a href="EditarUsuario?${user.id}" data-user-id="${user.id}" class="navbar-brand edit-user-btn" data-bs-toggle="modal" data-bs-target="#modalUserForm">
+           		 		<a href="#" 
+           		 		   data-user-id="${user.id}"
+           		 		   data-userNombre="${user.nombre}"
+           		 		   data-userTipo="${user.tipo}"
+           		 		   class="navbar-brand edit-user-btn" 
+           		 		   data-bs-toggle="modal" 
+           		 		   data-bs-target="#modalUserForm">
            		 		 <i class="bi bi-pencil-square fs-3"></i>
            		 		 </a> 
-           		 		 <a href="EliminarUsuario?${user.id}" data-user-id="${user.id}" class="navbar-brand delete-user-btn" data-bs-toggle="modal" data-bs-target="#modalDeleteForm">
+           		 		 <a href="#" data-user-id="${user.id}" class="navbar-brand delete-user-btn" data-bs-toggle="modal" data-bs-target="#modalDeleteForm">
            		 		 <i class="bi bi-trash fs-3"></i>
            		 		 </a> 
            		 	</td>

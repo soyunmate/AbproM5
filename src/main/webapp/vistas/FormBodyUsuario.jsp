@@ -15,7 +15,7 @@
             <label for="nombre" class="form-label col">Nombre</label>
             <input
               type="text"
-              class="form-control col"
+              class="form-control col inputNombre"
               name="nombre"
               placeholder="Ingrese nombre/titulo"
               required
