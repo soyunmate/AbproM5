@@ -138,15 +138,5 @@
   <servlet-mapping>
     <servlet-name>EliminarUsuario</servlet-name>
     <url-pattern>/EliminarUsuario</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>Home</display-name>
-    <servlet-name>Home</servlet-name>
-    <servlet-class>m5abpro1.Controller.Home</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>Home</servlet-name>
-    <url-pattern>/</url-pattern>
-  </servlet-mapping>
+  </servlet-mapping> 
 </web-app>

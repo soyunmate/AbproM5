@@ -25,9 +25,11 @@
             <a class="nav-link active" aria-current="page" href="Inicio"
               >Inicio</a
             >
+            
             <c:if test="${sessionScope.user != null}">
             	<a class="nav-link btn-menu-principal" href="#menu-desplegable" data-bs-toggle="offcanvas" aria-controls="menu-desplegable">Menu Principal</a>
             </c:if>
+            
             <c:if test="${sessionScope.tipo eq 'Cliente'}">
             	<a class="nav-link" href="Contacto" >Contacto</a>
             </c:if>

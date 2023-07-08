@@ -2,8 +2,8 @@ Proyecto: Evaluación Final del Módulo - Desarrollo de aplicaciones web dinámi
 
 Equipo de Desarrollo:
 - Gabriel Muñoz / https://github.com/soyunmate/AbproM5
-- Juan Romero /
-- Fabian Ugalde /
+- Juan Romero / https://github.com/JuanGuillermoRG/SprintM5
+- Fabian Ugalde / https://github.com/fa17an/sprintM5
 - Marcelo Aceituno /
 
 Repositorio GitHub: [Enlace al repositorio GitHub del proyecto](enlace al repositorio GitHub del proyecto)
@@ -18,12 +18,12 @@ Contenido del Repositorio:
 - Archivo "README.txt": Este archivo que proporciona información sobre el proyecto.
 
 Instrucciones de Implementación:
-1. Clonar el repositorio del proyecto desde [enlace al repositorio GitHub del proyecto].
+1. Clonar el repositorio del proyecto desde [https://github.com/soyunmate/AbproM5].
 2. Importar el proyecto en un entorno de desarrollo integrado (IDE) compatible con Java, como Eclipse o IntelliJ.
 3. Configurar las dependencias y librerías necesarias en el proyecto. Puedes utilizar Maven o Gradle para gestionar las dependencias.
 4. Configurar la conexión a la base de datos según las especificaciones del archivo SQL. Asegúrate de tener un servidor de base de datos instalado y configurado correctamente.
 5. Compilar y ejecutar la aplicación web en un servidor local, como Apache Tomcat o Jetty. Asegúrate de configurar correctamente el servidor y los archivos de despliegue.
-6. Acceder a la aplicación web a través de un navegador web compatible. Utiliza la URL proporcionada por el servidor local para acceder a la página de inicio del portal.
+6. Acceder a la aplicación web a través de un navegador web compatible. Punto de entrada: /Inicio
 
 Claves de Acceso:
 - ServerAdmin: Puede visualizar todo el contenido del sitio
